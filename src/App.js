@@ -1,10 +1,16 @@
-import logo from './logo.svg';
+import Home from './Pages/Home'
+// import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +23,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
