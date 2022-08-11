@@ -1,7 +1,11 @@
+// components
 import Home from './Pages/Home'
 import Dashboard from './Pages/Dashboard';
-// import logo from './logo.svg';
-import './App.css';
+
+// styling
+import './styling/App.scss';
+
+// libraries
 import { Routes, Route } from "react-router-dom";
 
 
@@ -12,20 +16,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
     </div>
   );
 }
