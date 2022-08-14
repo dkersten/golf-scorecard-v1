@@ -1,8 +1,11 @@
+// components
+import Layout from "../Layout"
+
 const Rounds = () => {
     return(
-        <div>
+        <Layout>
             This is the rounds screen
-        </div>
+        </Layout>
     )
 }
 
