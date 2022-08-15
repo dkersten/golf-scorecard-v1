@@ -1,8 +1,8 @@
 // components
 import Nav from './Components/Nav'
 
-// libraries
-// import 
+// styling
+import './styling/components/Layout.scss'
 
 const Layout = ({children}) => {
     return(
