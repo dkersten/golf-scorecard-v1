@@ -5,15 +5,18 @@ import Table from "../Components/Table"
 // data
 import rounds from "../Temp Data/roundsdata"
 
+// assets
+import { ReactComponent as StatsIcon } from '../Assets/Icons/mixed-char-icon.svg'
+
 const Rounds = () => {
     // {{ console.log(rounds)}}
     return(
         <Layout>
-            This is the rounds screen
             <Table
                 bodyData={rounds}
-                headerColumns={["#", "Date", "Course", "Number of Holes"]}
+                headerColumns={["#", "Date", "Course", "Holes Played", "Stats"]}
                 classList={["rounds-table"]}
+                icon={<StatsIcon />}
             />
         </Layout>
     )

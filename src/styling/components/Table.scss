@@ -17,6 +17,7 @@ table {
             font-weight: 400;
             text-transform: uppercase;
             text-align: left;
+            border-bottom: 2px solid $color-offwhite3;
         }
     }
 
@@ -30,5 +31,12 @@ table {
 
     th, td {
         padding: $s-md1 $s-md2;
+    }
+
+    td svg {
+        fill: $color-primary;
+        height: 22px;
+        width: auto;
+        margin-bottom: -6px;
     }
 }

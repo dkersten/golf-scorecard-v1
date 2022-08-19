@@ -23,7 +23,18 @@ const Table = (props) => {
 
             // loop through object to build out td elements
             for (const key in data[i]) {
-                rowTDs.push(<td key={key}>{ data[i][key] }</td>)
+                // console.log(typeof(data[i]))
+                if (typeof data[i][key] === 'string') {
+                    rowTDs.push(<td key={key}>{ data[i][key] }</td>)
+                } else if (typeof data[i][key] === 'number') {
+                    rowTDs.push(<td key={key}>{ data[i][key] }</td>)
+                } else if (typeof data[i][key] === 'boolean') {
+                    data[i][key] === true 
+                        ? 
+                            rowTDs.push(<td key={key}>{props.icon}</td>) 
+                        : 
+                            rowTDs.push(<td key={key}>{ null }</td>)
+                }
             }
 
             bodyRows.push(<tr>{ rowTDs }</tr>)

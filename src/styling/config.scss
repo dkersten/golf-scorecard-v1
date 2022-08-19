@@ -31,7 +31,7 @@ $color-offwhite4: #516272;
 // status colors
 $color-danger: #DE3142;
 $color-success: #1A8754;
-$color-warning: #ffd96a;
+$color-warning: #ffe0b2;
 
 /////// spacing
 $s-sm1: .25rem;
@@ -65,3 +65,6 @@ $br-xxl: 20px;
 /////// mixins
 
 /////// common styling
+*:not(i) {
+    font-family: 'Source Sans Pro', sans-serif;
+}
