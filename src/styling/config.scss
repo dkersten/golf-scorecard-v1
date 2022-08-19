@@ -22,8 +22,11 @@ $color-primary-l5: #2ca7ff;
 $color-primary-l6: #81caff;
 $color-primary-l7: #d5edff;
 
-// bacground colors
-$color-offwhite: #FAFAFA;
+// background colors
+$color-offwhite1: #FAFAFA;
+$color-offwhite2: #F2F5F7;
+$color-offwhite3: #E3E9ED;
+$color-offwhite4: #516272; 
 
 // status colors
 $color-danger: #DE3142;
@@ -44,6 +47,20 @@ $s-lg2: 3rem;
 $s-lg3: 4rem;
 $s-lg4: 6rem;
 $s-lg5: 8rem;
+
+// box-shadows
+$bs-sm: rgba(0, 0, 0, 0.075) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+$bs-md: rgba(0, 0, 0, 0.075) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+$bs-lg: rgba(0, 0, 0, 0.075) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+$bs-xl: rgba(0, 0, 0, 0.175) 0px 25px 50px -12px;
+$bs-xxl: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+
+// border radius
+$br-sm: 3px;
+$br-md: 5px;
+$br-lg: 8px;
+$br-xl: 12px;
+$br-xxl: 20px;
 
 /////// mixins
 

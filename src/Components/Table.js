@@ -1,3 +1,6 @@
+// styling
+import '../styling/components/Table.scss'
+
 const Table = (props) => {
 
     // Populate table head with data from props

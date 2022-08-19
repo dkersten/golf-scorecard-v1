@@ -1,0 +1,34 @@
+@import '../config.scss';
+
+
+table {
+    box-shadow: $bs-xxl;
+    border-radius: $br-lg;
+    border-spacing: 0;
+    overflow: hidden;
+    width: 100%;
+
+    thead {
+        background: $color-offwhite2;
+        border-radius: $br-lg $br-lg 0 0;
+
+        th {
+            color: $color-offwhite4;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-align: left;
+        }
+    }
+
+    tbody {
+        tr {
+            &:not(:last-of-type) td {
+                border-bottom: 1px solid $color-offwhite3;
+            }
+        }
+    }
+
+    th, td {
+        padding: $s-md1 $s-md2;
+    }
+}
