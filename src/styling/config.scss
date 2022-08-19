@@ -23,10 +23,14 @@ $color-primary-l6: #81caff;
 $color-primary-l7: #d5edff;
 
 // background colors
-$color-offwhite1: #FAFAFA;
+$color-white: #fff;
+$color-offwhite1: #FAFDFF;
 $color-offwhite2: #F2F5F7;
 $color-offwhite3: #E3E9ED;
-$color-offwhite4: #516272; 
+$color-offwhite4: #516272;
+
+// font colors:
+$color-font-light-theme: #56595D;
 
 // status colors
 $color-danger: #DE3142;
@@ -67,4 +71,5 @@ $br-xxl: 20px;
 /////// common styling
 *:not(i) {
     font-family: 'Source Sans Pro', sans-serif;
+    color: $color-font-light-theme;
 }

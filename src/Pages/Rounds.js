@@ -16,7 +16,10 @@ const Rounds = () => {
                 bodyData={rounds}
                 headerColumns={["#", "Date", "Course", "Holes Played", "Stats"]}
                 classList={["rounds-table"]}
-                icon={<StatsIcon />}
+                iconInfo={{
+                    icon: <StatsIcon />,
+                    link: "#"
+                }}
             />
         </Layout>
     )

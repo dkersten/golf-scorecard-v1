@@ -26,6 +26,14 @@ table {
             &:not(:last-of-type) td {
                 border-bottom: 1px solid $color-offwhite3;
             }
+
+            &:nth-of-type(even) {
+                background: $color-offwhite1;
+            }
+
+            &:nth-of-type(odd) {
+                background: $color-white;
+            }
         }
     }
 

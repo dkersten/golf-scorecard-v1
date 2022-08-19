@@ -1,3 +1,9 @@
+// components
+import { ReactComponent as DefaultIcon } from '../Assets/Icons/horizontal-dots.svg'
+
+// libraries
+import { Link } from 'react-router-dom'
+
 // styling
 import '../styling/components/Table.scss'
 
@@ -29,11 +35,11 @@ const Table = (props) => {
                 } else if (typeof data[i][key] === 'number') {
                     rowTDs.push(<td key={key}>{ data[i][key] }</td>)
                 } else if (typeof data[i][key] === 'boolean') {
-                    data[i][key] === true 
-                        ? 
-                            rowTDs.push(<td key={key}>{props.icon}</td>) 
-                        : 
-                            rowTDs.push(<td key={key}>{ null }</td>)
+                    if (data[i][key] === true) {
+                        rowTDs.push(<td key={key}>{ renderIcon() }</td>) 
+                    } else {
+                        rowTDs.push(<td key={key}>{ null }</td>)
+                    } 
                 }
             }
 
@@ -52,6 +58,19 @@ const Table = (props) => {
         tableClasses = tableClasses.slice(0, -1)
 
         return tableClasses
+    }
+
+    // build icon/link
+    const renderIcon = () => {
+        if (props.iconInfo.icon && props.iconInfo.link) {
+            return(<Link to={props.iconInfo.link}>{props.iconInfo.icon}</Link>)
+        } else if (props.iconInfo.icon) {
+            return props.iconInfo.icon
+        } else if (props.iconInfo.link) {
+                return <Link to={props.iconInfo.link}><DefaultIcon /></Link>
+        } else {
+                return <DefaultIcon />
+        }
     }
 
     return(
