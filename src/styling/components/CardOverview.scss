@@ -1,0 +1,30 @@
+@import '../config.scss';
+
+.card-overview {
+    list-style: none;
+    background: radial-gradient($color-primary, $color-primary-l1);
+    border-radius: $br-lg;
+    padding: $s-md1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: calc(33.333% - (($s-md1 + $s-md1)) / 3);
+
+    &:not(:last-of-type) {
+        margin-right: $s-md1;
+    }
+
+    .icon-section {
+        margin-bottom: $s-md1;
+        order: 2;
+
+        svg {
+            height: 30px;
+            width: auto;
+        }
+    }
+
+    .stats-container {
+        order: 1;
+    }
+}
