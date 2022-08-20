@@ -9,10 +9,10 @@ const CardOverview = (props) => {
             </div>
             <div className="stats-container">
                 <div className="flex1">
-                    <h2>{ props.headline }</h2>
+                    <h2 className='stat-category'>{ props.headline }</h2>
                 </div>
                 <div className="flex2">
-                    <span>{ props.data }</span>
+                    <span className='data'>{ props.data }</span>
                 </div>
             </div>
         </li>

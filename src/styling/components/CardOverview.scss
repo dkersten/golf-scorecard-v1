@@ -1,30 +1,54 @@
 @import '../config.scss';
 
 .card-overview {
+    box-shadow: $bs-lg;
     list-style: none;
     background: radial-gradient($color-primary, $color-primary-l1);
     border-radius: $br-lg;
-    padding: $s-md1;
+    padding: $s-md3;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-basis: calc(33.333% - (($s-md1 + $s-md1)) / 3);
+    position: relative;
+    z-index: 1;
 
     &:not(:last-of-type) {
         margin-right: $s-md1;
     }
 
+    .icon-section, .stats-container {
+        position: relative;
+        z-index: 3;
+    }
+
     .icon-section {
-        margin-bottom: $s-md1;
         order: 2;
+        margin-left: $s-sm3;
 
         svg {
-            height: 30px;
+            height: 40px;
             width: auto;
+            fill: $color-primary-l5;
         }
     }
 
     .stats-container {
         order: 1;
+        margin-right: $s-sm3;
+
+        .stat-category {
+            color: $color-white;
+            opacity: .8;
+            font-size: $font-md;
+            margin-bottom: $s-sm1;
+        }
+        
+        .data {
+            color: $color-white;
+            font-weight: 600;
+            font-size: $font-xxl;
+            line-height: 1;
+        }
     }
 }
