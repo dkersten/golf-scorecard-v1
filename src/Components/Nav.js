@@ -3,6 +3,7 @@ import '../styling/components/Nav.scss'
 
 // libraries
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 // assets
 import { ReactComponent as HomeIcon } from '../Assets/Icons/home-icon.svg'
@@ -10,8 +11,32 @@ import { ReactComponent as DashboardIcon } from '../Assets/Icons/dashboard-icon.
 import { ReactComponent as RoundsIcon } from '../Assets/Icons/golf-hole-light-icon.svg'
 
 const Nav = () => {
+    const [menuOpen, setMenuOpen] = useState(false)
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen)
+    }
+
     return(
-        <nav>
+        <nav
+            className={`${menuOpen ? 'menu-opened' : 'menu-closed'}`}
+        >
+            <div className="menu-buttons">
+                <button
+                    aria-label='Open Menu'
+                    onClick={toggleMenu}
+                    className='btn-open'
+                >
+                    Open
+                </button>
+                <button 
+                    aria-label='Close Menu'
+                    onClick={toggleMenu}
+                    className='btn-close'
+                >
+                    Close
+                </button>
+            </div>
             <ul>
                 <li>
                     <Link to="/">

@@ -3,8 +3,13 @@
 nav {
     padding: $s-md3 $s-lg1;
 
+    .menu-buttons {
+        display: none;
+    }
+
     ul {
         padding: 0;
+        position: fixed;
     }
 
     li {
@@ -41,5 +46,47 @@ nav {
     a {
         text-decoration: none;
         font-size: $font-md;
+    }
+
+    @media only screen and (max-width: 999px) {
+        &.menu-opened {
+            .btn-open {
+                display: none;
+            }
+
+            .btn-close {
+                display: block;
+            }
+
+            ul {
+                display: block;
+            }
+        }
+
+        &.menu-closed {
+            .btn-open {
+                display: block;
+            }
+
+            .btn-close {
+                display: none;
+            }
+
+            ul {
+                display: none;
+            }
+        }
+
+        .menu-buttons {
+            display: block;
+
+            .opened {
+                display: block;
+            }
+
+            .closed {
+                display: none;
+            }
+        }
     }
 }
