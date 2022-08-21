@@ -48,24 +48,34 @@ nav {
         font-size: $font-md;
     }
 
-    @media only screen and (max-width: 999px) {
+    @media only screen and (max-width: 1120px) {
+
         &.menu-opened {
+            position: fixed;
+            z-index: 100;
+            height: 100%;
+            transition: all .3s ease-in-out;
+
             .btn-open {
                 display: none;
             }
 
             .btn-close {
                 display: block;
+                position: fixed;
             }
 
             ul {
                 display: block;
+                margin-top: $s-lg2;
             }
         }
 
         &.menu-closed {
             .btn-open {
                 display: block;
+                position: fixed;
+                left: $s-md2;
             }
 
             .btn-close {
@@ -78,7 +88,8 @@ nav {
         }
 
         .menu-buttons {
-            display: block;
+            display: flex;
+            justify-content: flex-end;
 
             .opened {
                 display: block;
@@ -86,6 +97,20 @@ nav {
 
             .closed {
                 display: none;
+            }
+
+            button {
+                padding: 0;
+                margin: 0;
+                line-height: 1;
+                background: rgba(0,0,0,0);
+                border: none;
+            }
+
+            svg {
+                fill: $color-primary;
+                width: 22px;
+                height: auto;
             }
         }
     }

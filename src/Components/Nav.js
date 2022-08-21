@@ -9,6 +9,8 @@ import { useState } from 'react'
 import { ReactComponent as HomeIcon } from '../Assets/Icons/home-icon.svg'
 import { ReactComponent as DashboardIcon } from '../Assets/Icons/dashboard-icon.svg'
 import { ReactComponent as RoundsIcon } from '../Assets/Icons/golf-hole-light-icon.svg'
+import { ReactComponent as MenuIcon } from '../Assets/Icons/menu-icon.svg'
+import { ReactComponent as CloseIcon } from '../Assets/Icons/close-icon.svg'
 
 const Nav = () => {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -27,14 +29,14 @@ const Nav = () => {
                     onClick={toggleMenu}
                     className='btn-open'
                 >
-                    Open
+                    <MenuIcon />
                 </button>
                 <button 
                     aria-label='Close Menu'
                     onClick={toggleMenu}
                     className='btn-close'
                 >
-                    Close
+                    <CloseIcon />
                 </button>
             </div>
             <ul>

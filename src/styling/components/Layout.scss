@@ -10,6 +10,14 @@
         background: $color-offwhite1;
         display: static;
         box-shadow: inset -25px 0 25px -25px rgba(0,0,0,0.1);
+
+        @media only screen and (max-width: 1120px) {
+            &.menu-closed {
+                max-width: auto;
+                width: calc( ($s-md2 * 2) + 22px );
+                padding: $s-md3 $s-md2;
+            }
+        }
     }
 
     main {
