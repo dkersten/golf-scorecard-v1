@@ -1,0 +1,45 @@
+@import '../config.scss';
+
+nav {
+    padding: $s-md3 $s-lg1;
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+
+        &:not(:last-of-type) {
+            margin-bottom: $s-sm3;
+        }
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            transform: translateX($s-sm1);
+        }
+    }
+
+    .icon-container {
+        margin-right: $s-sm3;
+        width: 22px;
+        display: flex;
+        align-items: center;
+    }
+
+    svg {
+        height: 18px;
+        width: auto;
+        fill: $color-primary;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: $font-md;
+    }
+}

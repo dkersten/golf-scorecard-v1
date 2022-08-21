@@ -26,7 +26,7 @@ const Rounds = () => {
                         <CardOverview 
                             icon={<GolfballTeeIcon />} 
                             headline="Holes Played"
-                            data={270}
+                            data={288}
                         />
                         <CardOverview 
                             icon={<GolfHoleIcon />} 

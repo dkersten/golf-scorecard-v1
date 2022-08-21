@@ -148,6 +148,12 @@ const rounds = [
         course: "Churchville GC",
         numHoles: 9,
         stats: false
+    },
+    {
+        date: "August 20th",
+        course: "Crag Burn CC",
+        numHoles: 18,
+        stats: false
     }
 ]
 
