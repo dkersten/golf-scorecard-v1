@@ -1,5 +1,8 @@
 @import '../config.scss';
 
+.table-container {
+    overflow-x: scroll;
+}
 
 table {
     box-shadow: $bs-xxl;
@@ -47,5 +50,11 @@ table {
         height: 22px;
         width: auto;
         margin-bottom: -6px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        td {
+            padding: $s-md1 $s-sm4;
+        }
     }
 }

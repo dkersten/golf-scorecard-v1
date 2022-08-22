@@ -1,156 +1,234 @@
 const rounds = [
     {
-        date: "April 29th",
+        date: {
+            full: "April 29th",
+            mobile: "4/29"
+        },
         course: "Sheridan",
         numHoles: 9,
         stats: true
     },
     {
-        date: "April 30th",
+        date: {
+            full: "April 30th",
+            mobile: "4/30"
+        },
         course: "Sheridan",
         numHoles: 9,
         stats: true
     },
     {
-        date: "May 7th",
+        date: {
+            full: "May 7th",
+            mobile: "5/7"
+        },
         course: "Brighton",
         numHoles: 9,
         stats: false
     },
     {
-        date: "May 13th",
+        date: {
+            full: "May 13th",
+            mobile: "5/13"
+        },
         course: "Brighton",
         numHoles: 9,
         stats: false
     },
     {
-        date: "May 15th",
+        date: {
+            full: "May 15th",
+            mobile: "5/15"
+        },
         course: "Brighton",
         numHoles: 18,
         stats: false
     },
     {
-        date: "May 20th",
+        date: {
+            full: "May 20th",
+            mobile: "5/20"
+        },
         course: "Brighton",
         numHoles: 9,
         stats: true
     },
     {
-        date: "June 3rd",
+        date: {
+            full: "June 3rd",
+            mobile: "6/3"
+        },
         course: "Brighton",
         numHoles: 9,
         stats: false
     },
     {
-        date: "June 10th",
+        date: {
+            full: "June 10th",
+            mobile: "6/10"
+        },
         course: "Brighton",
         numHoles: 9,
         stats: false
     },
     {
-        date: "June 12th",
+        date: {
+            full: "June 12th",
+            mobile: "6/12"
+        },
         course: "Brighton",
         numHoles: 18,
         stats: true
     },
     {
-        date: "June 17th",
+        date: {
+            full: "June 17th",
+            mobile: "6/17"
+        },
         course: "Fossil Trace",
         numHoles: 18,
         stats: true
     },
     {
-        date: "June 25th",
+        date: {
+            full: "June 25th",
+            mobile: "6/25"
+        },
         course: "Brighton",
         numHoles: 18,
         stats: true
     },
     {
-        date: "July 4th",
+        date: {
+            full: "July 4th",
+            mobile: "7/4"
+        },
         course: "Brighton",
         numHoles: 18,
         stats: false
     },
     {
-        date: "July 9th",
+        date: {
+            full: "July 9th",
+            mobile: "7/9"
+        },
         course: "Brighton",
         numHoles: 9,
         stats: false
     },
     {
-        date: "July 10th",
+        date: {
+            full: "July 10th",
+            mobile: "7/10"
+        },
         course: "Brighton",
         numHoles: 9,
         stats: false
     },
     {
-        date: "July 15th",
+        date: {
+            full: "July 15th",
+            mobile: "7/15"
+        },
         course: "Sheridan",
         numHoles: 9,
         stats: true
     },
     {
-        date: "July 18th",
+        date: {
+            full: "July 18th",
+            mobile: "7/18"
+        },
         course: "Brighton",
         numHoles: 9,
         stats: false
     },
     {
-        date: "July 24th",
+        date: {
+            full: "July 24th",
+            mobile: "7/24"
+        },
         course: "Pocono Hills",
         numHoles: 9,
         stats: false
     },
     {
-        date: "July 27th",
+        date: {
+            full: "July 27th",
+            mobile: "7/27"
+        },
         course: "Brighton",
         numHoles: 9,
         stats: true
     },
     {
-        date: "July 29th",
+        date: {
+            full: "July 29th",
+            mobile: "7/29"
+        },
         course: "Brighton",
         numHoles: 9,
         stats: true
     },
     {
-        date: "July 31st",
+        date: {
+            full: "July 31th",
+            mobile: "7/31"
+        },
         course: "Brighton",
         numHoles: 9,
         stats: true
     },
     {
-        date: "August 5th",
+        date: {
+            full: "August 5th",
+            mobile: "8/5"
+        },
         course: "Brighton",
         numHoles: 9,
         stats: false
     },
     {
-        date: "August 11th",
+        date: {
+            full: "August 11th",
+            mobile: "8/11"
+        },
         course: "Sheridan",
         numHoles: 9,
         stats: false
     },
     {
-        date: "August 12th",
+        date: {
+            full: "August 12th",
+            mobile: "8/12"
+        },
         course: "Brighton",
         numHoles: 9,
         stats: true
     },
     {
-        date: "August 17th",
+        date: {
+            full: "August 17th",
+            mobile: "8/17"
+        },
         course: "Sheridan",
         numHoles: 9,
         stats: true
     },
     {
-        date: "August 19th",
+        date: {
+            full: "August 19th",
+            mobile: "8/19"
+        },
         course: "Churchville GC",
         numHoles: 9,
         stats: false
     },
     {
-        date: "August 20th",
+        date: {
+            full: "August 20th",
+            mobile: "8/20"
+        },
         course: "Crag Burn CC",
         numHoles: 18,
         stats: false
