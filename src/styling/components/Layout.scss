@@ -1,27 +1,63 @@
 @import '../config.scss';
 
 .App {
-    display: flex;
-    min-height: 100vh;
+    .app-wrapper {
+        display: flex;
+        min-height: 100vh;
 
-    nav {
-        width: 20%;
-        max-width: 275px;
-        background: $color-offwhite1;
-        display: static;
-        box-shadow: inset -25px 0 25px -25px rgba(0,0,0,0.1);
+        nav {
+            width: 20%;
+            max-width: 275px;
+            background: $color-offwhite1;
+            display: static;
+            box-shadow: inset -25px 0 25px -25px rgba(0,0,0,0.1);
 
-        @media only screen and (max-width: 1120px) {
-            &.menu-closed {
-                max-width: auto;
-                width: calc( ($s-md2 * 2) + 22px );
-                padding: $s-md3 $s-md2;
+            @media only screen and (max-width: 1120px) {
+                &.menu-closed {
+                    max-width: auto;
+                    width: calc( ($s-md2 * 2) + 22px );
+                    padding: $s-md3 $s-md2;
+                }
+            }
+
+            @media only screen and (max-width: 767px) {
+                &.menu-closed {
+                    width: 100%;
+                    max-width: 100%;
+                    padding: $s-sm4 $s-md4;
+                    height: calc(($s-sm4 * 2) + 26px);
+                }
             }
         }
-    }
 
-    main {
-        flex: 1;
-        padding: $s-lg3;
+        main {
+            flex: 1;
+            padding: $s-lg3;
+
+            @media only screen and (max-width: 1120px) {
+                padding-left: calc($s-lg3 + (($s-md2 * 2) + 22px));
+            }
+
+            @media only screen and (max-width: 949px) {
+                padding: $s-lg1 $s-lg1 $s-lg1 calc($s-lg1 + (($s-md2 * 2) + 22px));
+            }
+
+            @media only screen and (max-width: 767px) {
+                padding: calc((($s-sm4 * 2) + $s-lg2) + 25px) $s-md4 $s-lg2 $s-md4;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            flex-direction: column;
+
+            nav {
+                box-shadow: 0 4px 4px -4px rgba(0,0,0,0.1);
+
+                &.menu-opened {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
     }
 }
