@@ -4,9 +4,12 @@
     overflow-x: scroll;
 }
 
-table {
+.table-container {
     box-shadow: $bs-xxl;
     border-radius: $br-lg;
+}
+
+table {
     border-spacing: 0;
     overflow: hidden;
     width: 100%;
