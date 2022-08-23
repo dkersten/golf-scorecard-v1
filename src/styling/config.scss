@@ -115,6 +115,20 @@ $font-xxl: 2.5rem;
     color: $color-font-light-theme;
 }
 
+.year-selector-section {
+    margin-bottom: $s-md4;
+
+    .dropdown-container {
+        display: flex;
+        align-items: center;
+
+        label {
+            margin-right: $s-sm3;
+            font-size: $font-md2;
+        }
+    }
+}
+
 .overview-section {
     margin-bottom: $s-lg3;
 
