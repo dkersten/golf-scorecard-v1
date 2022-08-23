@@ -77,6 +77,37 @@ $font-xl: 2rem;
 $font-xxl: 2.5rem;
 
 /////// mixins
+@mixin btnPrimary {
+    background: linear-gradient(to right, $color-primary, $color-primary-l1);
+    border: none;
+    padding: calc($s-sm3 + 2px) $s-md4;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 2s ease-in-out;
+
+    .btn-text {
+        color: $color-white;
+    }
+
+    .btn-icon svg {
+        height: $font-reg;
+        width: 0;
+        fill: $color-white;
+        margin-bottom: -3px;
+        margin-left: 0;
+        transition: all .2s ease-in-out;
+    }
+
+    &:hover {
+        background: linear-gradient(to left, $color-primary, $color-primary);
+
+        .btn-icon svg {
+            margin-left: 1.25rem;
+            display: inline-block;
+            width: auto;
+        }
+    }
+}
 
 /////// common styling
 *:not(i) {
@@ -98,4 +129,8 @@ $font-xxl: 2.5rem;
         }
     
     }
+}
+
+.btn-primary {
+    @include btnPrimary;
 }

@@ -1,3 +1,7 @@
+// components
+import { ReactComponent as ArrowRightIcon } from '../Assets/Icons/arrow-right-icon.svg'
+import BtnPrimary from './BtnPrimary'
+
 // libraries/helpers
 import renderHeaderData from '../Helpers/RenderTableHeaderData'
 import { renderInitialBodyData, renderAllBodyData } from '../Helpers/RenderTableBodyData'
@@ -44,15 +48,25 @@ const Table = (props) => {
                 </table>
             </div>
             {
-                (props.bodyData.length > 9 && requestAdditionalData === false)
+                (props.bodyData.length > 10 && requestAdditionalData === false)
                 ?
                     <div className="table-button-container">
-                        <button
+                        {/* <button
                             className='btn-primary'
                             onClick={getAdditionalData}
                         >
-                            Show More
-                        </button>
+                            <span className="btn-text">
+                                Show More
+                            </span>
+                            <span className="btn-icon">
+                                <ArrowRightIcon />
+                            </span>
+                        </button> */}
+                        <BtnPrimary
+                            clickAction={getAdditionalData}
+                            text="Show More"
+                            icon={<ArrowRightIcon />}
+                        />
                     </div>
                 :
                     null
