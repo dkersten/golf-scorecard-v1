@@ -2,6 +2,7 @@
 import Layout from "../Layout"
 import CardOverview from "../Components/CardOverview"
 import Table from "../Components/Table"
+import SelectWithState from "../Components/SelectWithState"
 
 // data
 import rounds from "../Temp Data/updatedRoundsData"
@@ -21,24 +22,25 @@ const Rounds = () => {
     currentYear = currentYear.toString()
     const [yearChoice, setYearChoice] = useState(currentYear)
 
+    const SelectOptions = (rounds) => {
+        const optionsObj = {}
+        for (const [key, val] of Object.entries(rounds)) {
+            optionsObj[key] = val.displayName
+        }
+        return optionsObj
+    }
+
     return(
         <Layout>
             <div className="year-selector-section">
-                <form>
-                    <div className="dropdown-container">
-                        <label htmlFor="yearSelect">Year: </label>
-                        <select
-                            id="yearSelect"
-                            value={yearChoice}
-                            defaultValue={currentYear}
-                            onChange={(e) => setYearChoice(e.target.value)}
-                        >
-                            <option value="2021">2021</option>
-                            <option defaultValue value="2022">2022</option>
-                            <option value="alltime">All Time</option>
-                        </select>
-                    </div>
-                </form>
+                <SelectWithState
+                    selectValue="Year: "
+                    selectId={"yearSelect"}
+                    defaultVal={yearChoice}
+                    currentState={yearChoice}
+                    setCurrentState={setYearChoice}
+                    optionsItems={SelectOptions(rounds)}
+                />
             </div>
             <div className="overview-section">
                 <div className="card-container">

@@ -1,5 +1,6 @@
 const rounds = {
     2022: {
+        displayName: "2022",
         roundsPlayed: 26,
         holesPlayed: 297,
         coursesPlayed: 6,
@@ -13,7 +14,7 @@ const rounds = {
         rounds: [
             {
                 date: {
-                    full: "April 29th",
+                    full: "April 29",
                     mobile: "4/29"
                 },
                 course: "Sheridan",
@@ -22,7 +23,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "April 30th",
+                    full: "April 30",
                     mobile: "4/30"
                 },
                 course: "Sheridan",
@@ -31,7 +32,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "May 7th",
+                    full: "May 7",
                     mobile: "5/7"
                 },
                 course: "Brighton",
@@ -40,7 +41,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "May 13th",
+                    full: "May 13",
                     mobile: "5/13"
                 },
                 course: "Brighton",
@@ -49,7 +50,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "May 15th",
+                    full: "May 15",
                     mobile: "5/15"
                 },
                 course: "Brighton",
@@ -58,7 +59,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "May 20th",
+                    full: "May 20",
                     mobile: "5/20"
                 },
                 course: "Brighton",
@@ -67,7 +68,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "June 3rd",
+                    full: "June 3",
                     mobile: "6/3"
                 },
                 course: "Brighton",
@@ -76,7 +77,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "June 10th",
+                    full: "June 10",
                     mobile: "6/10"
                 },
                 course: "Brighton",
@@ -85,7 +86,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "June 12th",
+                    full: "June 12",
                     mobile: "6/12"
                 },
                 course: "Brighton",
@@ -94,7 +95,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "June 17th",
+                    full: "June 17",
                     mobile: "6/17"
                 },
                 course: "Fossil Trace",
@@ -103,7 +104,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "June 25th",
+                    full: "June 25",
                     mobile: "6/25"
                 },
                 course: "Brighton",
@@ -112,7 +113,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 4th",
+                    full: "July 4",
                     mobile: "7/4"
                 },
                 course: "Brighton",
@@ -121,7 +122,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 9th",
+                    full: "July 9",
                     mobile: "7/9"
                 },
                 course: "Brighton",
@@ -130,7 +131,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 10th",
+                    full: "July 10",
                     mobile: "7/10"
                 },
                 course: "Brighton",
@@ -139,7 +140,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 15th",
+                    full: "July 15",
                     mobile: "7/15"
                 },
                 course: "Sheridan",
@@ -148,7 +149,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 18th",
+                    full: "July 18",
                     mobile: "7/18"
                 },
                 course: "Brighton",
@@ -157,7 +158,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 24th",
+                    full: "July 24",
                     mobile: "7/24"
                 },
                 course: "Pocono Hills",
@@ -166,7 +167,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 27th",
+                    full: "July 27",
                     mobile: "7/27"
                 },
                 course: "Brighton",
@@ -175,7 +176,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 29th",
+                    full: "July 29",
                     mobile: "7/29"
                 },
                 course: "Brighton",
@@ -184,7 +185,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 31th",
+                    full: "July 31",
                     mobile: "7/31"
                 },
                 course: "Brighton",
@@ -193,7 +194,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "August 5th",
+                    full: "August 5",
                     mobile: "8/5"
                 },
                 course: "Brighton",
@@ -202,7 +203,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "August 11th",
+                    full: "August 11",
                     mobile: "8/11"
                 },
                 course: "Sheridan",
@@ -211,7 +212,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "August 12th",
+                    full: "August 12",
                     mobile: "8/12"
                 },
                 course: "Brighton",
@@ -220,7 +221,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "August 17th",
+                    full: "August 17",
                     mobile: "8/17"
                 },
                 course: "Sheridan",
@@ -229,7 +230,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "August 19th",
+                    full: "August 19",
                     mobile: "8/19"
                 },
                 course: "Churchville GC",
@@ -238,7 +239,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "August 20th",
+                    full: "August 20",
                     mobile: "8/20"
                 },
                 course: "Crag Burn CC",
@@ -248,6 +249,7 @@ const rounds = {
         ]
     },
     2021: {
+        displayName: "2021",
         roundsPlayed: 17,
         holesPlayed: 198,
         coursesPlayed: 4,
@@ -263,7 +265,7 @@ const rounds = {
         rounds: [
             {
                 date: {
-                    full: "April 20th",
+                    full: "April 20",
                     mobile: "4/20"
                 },
                 course: "Brighton",
@@ -272,7 +274,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "April 27th",
+                    full: "April 27",
                     mobile: "4/27"
                 },
                 course: "Sheridan",
@@ -281,7 +283,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "April 30th",
+                    full: "April 30",
                     mobile: "4/30"
                 },
                 course: "Sheridan",
@@ -290,7 +292,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "May 9th",
+                    full: "May 9",
                     mobile: "5/9"
                 },
                 course: "Terry Hills GC",
@@ -299,7 +301,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "May 19th",
+                    full: "May 19",
                     mobile: "5/19"
                 },
                 course: "Audobahn Par 3 GC",
@@ -308,7 +310,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "June 8th",
+                    full: "June 8",
                     mobile: "6/8"
                 },
                 course: "Brighton",
@@ -317,7 +319,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "June 15th",
+                    full: "June 15",
                     mobile: "6/15"
                 },
                 course: "Brighton",
@@ -326,7 +328,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "June 23th",
+                    full: "June 23",
                     mobile: "6/23"
                 },
                 course: "Sheridan",
@@ -335,7 +337,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 2nd",
+                    full: "July 2",
                     mobile: "7/2"
                 },
                 course: "Brighton",
@@ -344,7 +346,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 3rd",
+                    full: "July 3",
                     mobile: "7/3"
                 },
                 course: "Brighton",
@@ -353,7 +355,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 10th",
+                    full: "July 10",
                     mobile: "7/10"
                 },
                 course: "Sheridan",
@@ -362,7 +364,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 16th",
+                    full: "July 16",
                     mobile: "7/16"
                 },
                 course: "Brighton",
@@ -371,7 +373,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 20th",
+                    full: "July 20",
                     mobile: "7/20"
                 },
                 course: "Brighton",
@@ -380,7 +382,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "August 4th",
+                    full: "August 4",
                     mobile: "8/4"
                 },
                 course: "Brighton",
@@ -389,7 +391,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "August 22nd",
+                    full: "August 22",
                     mobile: "8/20"
                 },
                 course: "Sheridan",
@@ -398,7 +400,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "September 13th",
+                    full: "September 13",
                     mobile: "9/13"
                 },
                 course: "Brighton",
@@ -407,7 +409,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "October 21st",
+                    full: "October 21",
                     mobile: "10/21"
                 },
                 course: "Sheridan",
@@ -417,6 +419,7 @@ const rounds = {
         ]
     },
     alltime: {
+        displayName: "All Time",
         roundsPlayed: 43,
         holesPlayed: 495,
         coursesPlayed: 8,
@@ -427,7 +430,7 @@ const rounds = {
         rounds: [
             {
                 date: {
-                    full: "April 20th, 2021",
+                    full: "April 20, 2021",
                     mobile: "4/20/21"
                 },
                 course: "Brighton",
@@ -436,7 +439,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "April 27th, 2021",
+                    full: "April 27, 2021",
                     mobile: "4/27/21"
                 },
                 course: "Sheridan",
@@ -445,7 +448,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "April 30th, 2021",
+                    full: "April 30, 2021",
                     mobile: "4/30/21"
                 },
                 course: "Sheridan",
@@ -454,7 +457,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "May 9th, 2021",
+                    full: "May 9, 2021",
                     mobile: "5/9/21"
                 },
                 course: "Terry Hills GC",
@@ -463,7 +466,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "May 19th, 2021",
+                    full: "May 19, 2021",
                     mobile: "5/19/21"
                 },
                 course: "Audobahn Par 3 GC",
@@ -472,7 +475,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "June 8th, 2021",
+                    full: "June 8, 2021",
                     mobile: "6/8/21"
                 },
                 course: "Brighton",
@@ -481,7 +484,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "June 15th, 2021",
+                    full: "June 15, 2021",
                     mobile: "6/15/21"
                 },
                 course: "Brighton",
@@ -490,7 +493,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "June 23th, 2021",
+                    full: "June 23, 2021",
                     mobile: "6/23/21"
                 },
                 course: "Sheridan",
@@ -499,7 +502,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 2nd, 2021",
+                    full: "July 2, 2021",
                     mobile: "7/2/21"
                 },
                 course: "Brighton",
@@ -508,7 +511,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 3rd, 2021",
+                    full: "July 3, 2021",
                     mobile: "7/3/21"
                 },
                 course: "Brighton",
@@ -517,7 +520,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 10th, 2021",
+                    full: "July 10, 2021",
                     mobile: "7/10/21"
                 },
                 course: "Sheridan",
@@ -526,7 +529,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 16th, 2021",
+                    full: "July 16, 2021",
                     mobile: "7/16/21"
                 },
                 course: "Brighton",
@@ -535,7 +538,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 20th, 2021",
+                    full: "July 20, 2021",
                     mobile: "7/20/21"
                 },
                 course: "Brighton",
@@ -544,7 +547,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "August 4th, 2021",
+                    full: "August 4, 2021",
                     mobile: "8/4/21"
                 },
                 course: "Brighton",
@@ -553,7 +556,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "August 22nd, 2021",
+                    full: "August 22, 2021",
                     mobile: "8/20/21"
                 },
                 course: "Sheridan",
@@ -562,7 +565,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "September 13th, 2021",
+                    full: "September 13, 2021",
                     mobile: "9/13/21"
                 },
                 course: "Brighton",
@@ -571,7 +574,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "October 21st, 2021",
+                    full: "October 21, 2021",
                     mobile: "10/21/21"
                 },
                 course: "Sheridan",
@@ -580,7 +583,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "April 29th, 2022",
+                    full: "April 29, 2022",
                     mobile: "4/29/22"
                 },
                 course: "Sheridan",
@@ -589,7 +592,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "April 30th, 2022",
+                    full: "April 30, 2022",
                     mobile: "4/30/22"
                 },
                 course: "Sheridan",
@@ -598,7 +601,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "May 7th, 2022",
+                    full: "May 7, 2022",
                     mobile: "5/7/22"
                 },
                 course: "Brighton",
@@ -607,7 +610,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "May 13th, 2022",
+                    full: "May 13, 2022",
                     mobile: "5/13/22"
                 },
                 course: "Brighton",
@@ -616,7 +619,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "May 15th, 2022",
+                    full: "May 15, 2022",
                     mobile: "5/15/22"
                 },
                 course: "Brighton",
@@ -625,7 +628,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "May 20th, 2022",
+                    full: "May 20, 2022",
                     mobile: "5/20/22"
                 },
                 course: "Brighton",
@@ -634,7 +637,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "June 3rd, 2022",
+                    full: "June 3, 2022",
                     mobile: "6/3/22"
                 },
                 course: "Brighton",
@@ -643,7 +646,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "June 10th, 2022",
+                    full: "June 10, 2022",
                     mobile: "6/10/22"
                 },
                 course: "Brighton",
@@ -652,7 +655,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "June 12th, 2022",
+                    full: "June 12, 2022",
                     mobile: "6/12/22"
                 },
                 course: "Brighton",
@@ -661,7 +664,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "June 17th, 2022",
+                    full: "June 17, 2022",
                     mobile: "6/17/22"
                 },
                 course: "Fossil Trace",
@@ -670,7 +673,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "June 25th, 2022",
+                    full: "June 25, 2022",
                     mobile: "6/25/22"
                 },
                 course: "Brighton",
@@ -679,7 +682,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 4th, 2022",
+                    full: "July 4, 2022",
                     mobile: "7/4/22"
                 },
                 course: "Brighton",
@@ -688,7 +691,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 9th, 2022",
+                    full: "July 9, 2022",
                     mobile: "7/9/22"
                 },
                 course: "Brighton",
@@ -697,7 +700,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 10th, 2022",
+                    full: "July 10, 2022",
                     mobile: "7/10/22"
                 },
                 course: "Brighton",
@@ -706,7 +709,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 15th, 2022",
+                    full: "July 15, 2022",
                     mobile: "7/15/22"
                 },
                 course: "Sheridan",
@@ -715,7 +718,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 18th, 2022",
+                    full: "July 18, 2022",
                     mobile: "7/18/22"
                 },
                 course: "Brighton",
@@ -724,7 +727,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 24th, 2022",
+                    full: "July 24, 2022",
                     mobile: "7/24/22"
                 },
                 course: "Pocono Hills",
@@ -733,7 +736,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 27th, 2022",
+                    full: "July 27, 2022",
                     mobile: "7/27/22"
                 },
                 course: "Brighton",
@@ -742,7 +745,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 29th, 2022",
+                    full: "July 29, 2022",
                     mobile: "7/29/22"
                 },
                 course: "Brighton",
@@ -751,7 +754,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "July 31th, 2022",
+                    full: "July 31, 2022",
                     mobile: "7/31/22"
                 },
                 course: "Brighton",
@@ -760,7 +763,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "August 5th, 2022",
+                    full: "August 5, 2022",
                     mobile: "8/5/22"
                 },
                 course: "Brighton",
@@ -769,7 +772,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "August 11th, 2022",
+                    full: "August 11, 2022",
                     mobile: "8/11/22"
                 },
                 course: "Sheridan",
@@ -778,7 +781,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "August 12th, 2022",
+                    full: "August 12, 2022",
                     mobile: "8/12/22"
                 },
                 course: "Brighton",
@@ -787,7 +790,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "August 17th, 2022",
+                    full: "August 17, 2022",
                     mobile: "8/17/22"
                 },
                 course: "Sheridan",
@@ -796,7 +799,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "August 19th, 2022",
+                    full: "August 19, 2022",
                     mobile: "8/19/22"
                 },
                 course: "Churchville GC",
@@ -805,7 +808,7 @@ const rounds = {
             },
             {
                 date: {
-                    full: "August 20th, 2022",
+                    full: "August 20, 2022",
                     mobile: "8/20/22"
                 },
                 course: "Crag Burn CC",
