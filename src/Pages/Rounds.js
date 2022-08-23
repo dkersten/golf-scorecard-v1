@@ -4,8 +4,7 @@ import CardOverview from "../Components/CardOverview"
 import Table from "../Components/Table"
 
 // data
-import rounds from "../Temp Data/roundsdata"
-// import rounds2 from "../Temp Data/updatedRoundsData"
+import rounds from "../Temp Data/updatedRoundsData"
 
 // libraries/helpers
 import { useState } from "react"
@@ -20,8 +19,7 @@ const Rounds = () => {
 
     let currentYear = new Date().getFullYear()
     currentYear = currentYear.toString()
-    // console.log(typeof currentYear)
-    const [choice, setChoice] = useState(currentYear)
+    const [yearChoice, setYearChoice] = useState(currentYear)
 
     return(
         <Layout>
@@ -31,9 +29,9 @@ const Rounds = () => {
                         <label htmlFor="yearSelect">Year: </label>
                         <select
                             id="yearSelect"
-                            value={choice}
+                            value={yearChoice}
                             defaultValue={currentYear}
-                            onChange={(e) => setChoice(e.target.value)}
+                            onChange={(e) => setYearChoice(e.target.value)}
                         >
                             <option value="2021">2021</option>
                             <option defaultValue value="2022">2022</option>
@@ -41,7 +39,6 @@ const Rounds = () => {
                         </select>
                     </div>
                 </form>
-                <div>Year Selected: { choice }</div>
             </div>
             <div className="overview-section">
                 <div className="card-container">
@@ -49,23 +46,23 @@ const Rounds = () => {
                         <CardOverview 
                             icon={<GolfClubIcon />}
                             headline="Rounds Played"
-                            data={26}
+                            data={rounds[yearChoice].roundsPlayed}
                         />
                         <CardOverview 
                             icon={<GolfballTeeIcon />} 
                             headline="Holes Played"
-                            data={297}
+                            data={rounds[yearChoice].holesPlayed}
                         />
                         <CardOverview 
                             icon={<GolfHoleIcon />} 
                             headline="Courses Played"
-                            data={6}
+                            data={rounds[yearChoice].coursesPlayed}
                         />
                     </ul>
                 </div>
             </div>
             <Table
-                bodyData={rounds}
+                bodyData={rounds[yearChoice].rounds}
                 headerColumns={["#", "Date", "Course", "Holes Played", "Stats"]}
                 classList={["rounds-table"]}
                 iconInfo={{
