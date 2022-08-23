@@ -1,0 +1,11 @@
+@import '../config.scss';
+
+.line-graph-container {
+    .recharts-wrapper {
+        margin: auto;
+    }
+
+    .recharts-surface {
+        margin-left: -25px;
+    }
+}
