@@ -133,6 +133,18 @@ $font-xxl: 2.5rem;
         }
     
     }
+
+    @media only screen and (max-width: 767px) {
+        margin-bottom: $s-lg2;
+    }
+}
+
+.graph-section {
+    margin-bottom: $s-lg3;
+
+    @media only screen and (max-width: 767px) {
+        margin-bottom: $s-lg2;
+    }
 }
 
 .btn-primary {

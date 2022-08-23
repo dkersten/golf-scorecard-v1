@@ -3,6 +3,7 @@ import Layout from "../Layout"
 import CardOverview from "../Components/CardOverview"
 import Table from "../Components/Table"
 import SelectWithState from "../Components/SelectWithState"
+import LineGraph from "../Components/LineGraph"
 
 // data
 import rounds from "../Temp Data/updatedRoundsData"
@@ -62,6 +63,9 @@ const Rounds = () => {
                         />
                     </ul>
                 </div>
+            </div>
+            <div className="graph-section">
+                <LineGraph />
             </div>
             <Table
                 bodyData={rounds[yearChoice].rounds}
