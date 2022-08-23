@@ -145,6 +145,23 @@ $font-xxl: 2.5rem;
     @media only screen and (max-width: 767px) {
         margin-bottom: $s-lg2;
     }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        .flex-item {
+            flex-basis: 50%;
+
+            @media only screen and (max-width: 849px) {
+                flex-basis: 100%;
+
+                &:not(:last-of-type) {
+                    margin-bottom: $s-md3;
+                }
+            }
+        }
+    }
 }
 
 .btn-primary {

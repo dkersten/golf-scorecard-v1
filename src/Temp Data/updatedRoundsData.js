@@ -4,13 +4,20 @@ const rounds = {
         roundsPlayed: 26,
         holesPlayed: 297,
         coursesPlayed: 6,
-        periods: {
-            April: 2,
-            May: 4,
-            June: 5,
-            July: 9,
-            August: 6
-        },
+        graphDataRounds: [
+            {name: 'Apr', rounds: 2},
+            {name: 'May', rounds: 4},
+            {name: 'Jun', rounds: 5},
+            {name: 'Jul', rounds: 9},
+            {name: 'Aug', rounds: 6}
+        ],
+        graphDataHoles: [
+            {name: 'Apr', holes: 18},
+            {name: 'May', holes: 45},
+            {name: 'Jun', holes: 72},
+            {name: 'Jul', holes: 99},
+            {name: 'Aug', holes: 63}
+        ],
         rounds: [
             {
                 date: {
@@ -253,15 +260,24 @@ const rounds = {
         roundsPlayed: 17,
         holesPlayed: 198,
         coursesPlayed: 4,
-        periods: {
-            April: 3,
-            May: 2,
-            June: 3,
-            July: 5,
-            August: 2,
-            September: 1,
-            November: 1
-        },
+        graphDataRounds: [
+            {name: 'Apr', rounds: 3},
+            {name: 'May', rounds: 2},
+            {name: 'Jun', rounds: 3},
+            {name: 'Jul', rounds: 5},
+            {name: 'Aug', rounds: 2},
+            {name: 'Sep', rounds: 1},
+            {name: 'Oct', rounds: 1}
+        ],
+        graphDataHoles: [
+            {name: 'Apr', holes: 36},
+            {name: 'May', holes: 27},
+            {name: 'Jun', holes: 36},
+            {name: 'Jul', holes: 54},
+            {name: 'Aug', holes: 27},
+            {name: 'Sep', holes: 9},
+            {name: 'Oct', holes: 9}
+        ],
         rounds: [
             {
                 date: {
@@ -423,10 +439,14 @@ const rounds = {
         roundsPlayed: 43,
         holesPlayed: 495,
         coursesPlayed: 8,
-        periods: {
-            2021: 17,
-            2022: 26
-        },
+        graphDataRounds: [
+            {name: '2021', rounds: 17},
+            {name: '2022', rounds: 26}
+        ],
+        graphDataHoles: [
+            {name: '2021', holes: 198},
+            {name: '2022', holes: 297}
+        ],
         rounds: [
             {
                 date: {

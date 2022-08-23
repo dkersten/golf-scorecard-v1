@@ -65,7 +65,22 @@ const Rounds = () => {
                 </div>
             </div>
             <div className="graph-section">
-                <LineGraph />
+                <div className="flex-container">
+                    <div className="flex-item">
+                        <LineGraph
+                            graphData={rounds[yearChoice].graphDataRounds}
+                            graphCaption="Rounds Played"
+                            dataKey="rounds"
+                        />
+                    </div>
+                    <div className="flex-item">
+                        <LineGraph
+                            graphData={rounds[yearChoice].graphDataHoles}
+                            graphCaption="Holes Played"
+                            dataKey="holes"
+                        />
+                    </div>
+                </div>
             </div>
             <Table
                 bodyData={rounds[yearChoice].rounds}
