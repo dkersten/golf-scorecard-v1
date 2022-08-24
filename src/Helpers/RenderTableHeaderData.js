@@ -1,6 +1,11 @@
-const renderHeaderData = (data) => {
+const renderHeaderData = (data, hideIndex) => {
     const headerEls = []
-    for (let i = 0; i < data.length; i++ ) {
+    
+    // conditionally show column "#" based on hideindex
+    let startingIndex
+    hideIndex ? startingIndex = 1 : startingIndex = 0
+
+    for (let i = startingIndex; i < data.length; i++ ) {
         headerEls.push(<th key={[i]}>{ data[i] }</th>)
     }
     return headerEls

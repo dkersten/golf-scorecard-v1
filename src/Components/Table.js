@@ -39,16 +39,16 @@ const Table = (props) => {
                 <table className={ classList(props.classList) }>
                     <thead>
                         <tr>
-                        { renderHeaderData(props.headerColumns) }
+                        { renderHeaderData(props.headerColumns, props.hideIndex) }
                         </tr>
                     </thead>
                     <tbody>
                         {
                             requestAdditionalData
                             ?
-                            renderAllBodyData(props.bodyData, props.iconInfo, isMobile)
+                            renderAllBodyData(props.bodyData, props.iconInfo, isMobile, props.hideIndex)
                             :
-                            renderInitialBodyData(props.bodyData, props.iconInfo, isMobile)
+                            renderInitialBodyData(props.bodyData, props.iconInfo, isMobile, props.hideIndex)
                         }
                     </tbody>
                 </table>

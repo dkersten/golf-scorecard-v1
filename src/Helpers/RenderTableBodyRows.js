@@ -1,9 +1,13 @@
 import renderIcon from "./TableIconLink"
 
-const renderBodyRows = (data, icon, isMobile, i, bodyRows) => {
+const renderBodyRows = (data, icon, isMobile, i, bodyRows, hideIndex) => {
     const rowTDs = []
     const rowNum = i + 1
-    rowTDs.push(<td key={data[i]}>{ rowNum }</td>)
+    
+    // if hide index is false (show index) add row number as first td element 
+    if (!hideIndex) {
+        rowTDs.push(<td key={data[i]}>{ rowNum }</td>)
+    }
 
     // loop through object to build out td elements
     for (const key in data[i]) {

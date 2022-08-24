@@ -8,7 +8,7 @@ const yardages = [
         degrees: 9.5
     },
     {
-        club: "3 Wood",
+        club: "3w",
         minTotal: 235,
         maxTotal: 245,
         minCarry: 220,
@@ -16,7 +16,7 @@ const yardages = [
         degrees: 18
     },
     {
-        club: "3 Iron",
+        club: "3i",
         minTotal: 220,
         maxTotal: 230,
         minCarry: 205,
@@ -24,7 +24,7 @@ const yardages = [
         degrees: 21
     },
     {
-        club: "4 Iron",
+        club: "4i",
         minTotal: 210,
         maxTotal: 220,
         minCarry: 195,
@@ -32,7 +32,7 @@ const yardages = [
         degrees: 23
     },
     {
-        club: "5 Iron",
+        club: "5i",
         minTotal: 200,
         maxTotal: 210,
         minCarry: 185,
@@ -40,7 +40,7 @@ const yardages = [
         degrees: 25
     },
     {
-        club: "6 Iron",
+        club: "6i",
         minTotal: 185,
         maxTotal: 195,
         minCarry: 175,
@@ -48,7 +48,7 @@ const yardages = [
         degrees: 28
     },
     {
-        club: "7 Iron",
+        club: "7i",
         minTotal: 175,
         maxTotal: 185,
         minCarry: 165,
@@ -56,7 +56,7 @@ const yardages = [
         degrees: 32
     },
     {
-        club: "8 Iron",
+        club: "8i",
         minTotal: 165,
         maxTotal: 175,
         minCarry: 160,
@@ -64,7 +64,7 @@ const yardages = [
         degrees: 36
     },
     {
-        club: "9 Iron",
+        club: "9i",
         minTotal: 155,
         maxTotal: 165,
         minCarry: 145,
@@ -72,7 +72,7 @@ const yardages = [
         degrees: 40
     },
     {
-        club: "Pitching Wedge",
+        club: "PW",
         minTotal: 140,
         maxTotal: 150,
         minCarry: 135,
@@ -80,7 +80,7 @@ const yardages = [
         degrees: 45
     },
     {
-        club: "Gap Wedge",
+        club: "GW",
         minTotal: 125,
         maxTotal: 135,
         minCarry: 120,
@@ -88,7 +88,7 @@ const yardages = [
         degrees: 50
     },
     {
-        club: "Sand Wedge",
+        club: "SW",
         minTotal: 115,
         maxTotal: 125,
         minCarry: 90,
@@ -96,7 +96,7 @@ const yardages = [
         degrees: 54
     },
     {
-        club: "Lob Wedge",
+        club: "LW",
         minTotal: 105,
         maxTotal: 115,
         minCarry: 100,
