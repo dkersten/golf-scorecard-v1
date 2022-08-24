@@ -17,6 +17,12 @@ const Table = (props) => {
     const [requestAdditionalData, setRequestAdditionalData] = useState(false)
 
     useEffect(() => {
+        if (props.fullTable) {
+            setRequestAdditionalData(true)
+        }
+    }, [props.fullTable])
+
+    useEffect(() => {
         window.addEventListener("resize", () => {
             const mobile = window.innerWidth < 950;
             if (mobile !== isMobile) setIsMobile(mobile);
@@ -48,20 +54,9 @@ const Table = (props) => {
                 </table>
             </div>
             {
-                (props.bodyData.length > 10 && requestAdditionalData === false)
+                (props.bodyData.length > 10 && requestAdditionalData === false && props.fullTable !== true)
                 ?
                     <div className="table-button-container">
-                        {/* <button
-                            className='btn-primary'
-                            onClick={getAdditionalData}
-                        >
-                            <span className="btn-text">
-                                Show More
-                            </span>
-                            <span className="btn-icon">
-                                <ArrowRightIcon />
-                            </span>
-                        </button> */}
                         <BtnPrimary
                             clickAction={getAdditionalData}
                             text="Show More"

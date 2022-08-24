@@ -1,10 +1,6 @@
 @import '../config.scss';
 
 .table-container {
-    overflow-x: scroll;
-}
-
-.table-container {
     box-shadow: $bs-xxl;
     border-radius: $br-lg;
 }
