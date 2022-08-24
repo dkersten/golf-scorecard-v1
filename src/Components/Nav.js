@@ -11,6 +11,7 @@ import { ReactComponent as DashboardIcon } from '../Assets/Icons/dashboard-icon.
 import { ReactComponent as RoundsIcon } from '../Assets/Icons/golf-hole-light-icon.svg'
 import { ReactComponent as MenuIcon } from '../Assets/Icons/menu-icon.svg'
 import { ReactComponent as CloseIcon } from '../Assets/Icons/close-icon.svg'
+import { ReactComponent as RulerIcon } from '../Assets/Icons/ruler-icon.svg'
 
 const Nav = () => {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -57,11 +58,19 @@ const Nav = () => {
                     </Link>
                 </li>
                 <li>
-                <Link to="/rounds">
+                    <Link to="/rounds">
                         <div className="icon-container">
                             <RoundsIcon />
                         </div>
                         <span>Rounds</span>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/yardages">
+                        <div className="icon-container">
+                            <RulerIcon />
+                        </div>
+                        <span>Yardages</span>
                     </Link>
                 </li>
             </ul>

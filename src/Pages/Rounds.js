@@ -90,6 +90,8 @@ const Rounds = () => {
                     icon: <StatsIcon />,
                     link: "#"
                 }}
+                hideIndex={false}
+                fullTable={false}
             />
         </Layout>
     )
