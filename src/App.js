@@ -2,7 +2,8 @@
 import Home from './Pages/Home'
 import Dashboard from './Pages/Dashboard'
 import Rounds from './Pages/Rounds'
-import Yardages from './Pages/Yardages';
+import Yardages from './Pages/Yardages'
+import Courses from './Pages/Courses'
 
 // styling
 import './styling/App.scss';
@@ -19,6 +20,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/rounds" element={<Rounds />} />
           <Route path="/yardages" element={<Yardages />} />
+          <Route path="/courses" element={<Courses />} />
         </Routes>
     </div>
   );
