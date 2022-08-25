@@ -24,7 +24,7 @@ const Goals = () => {
     }
 
     const goalData = () => {
-        const yearsGoalsArr = goals[currentYear].goals
+        const yearsGoalsArr = goals[yearChoice].goals
         const elemArr = []
 
         for ( let i = 0; i < yearsGoalsArr.length; i++ ) {
