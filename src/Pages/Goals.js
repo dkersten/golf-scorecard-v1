@@ -1,6 +1,7 @@
 // components
 import Layout from "../Layout"
 import SelectWithState from "../Components/SelectWithState"
+import CardGoal from "../Components/CardGoal"
 
 // data
 import goals from "../Temp Data/goalsData"
@@ -22,6 +23,22 @@ const Goals = () => {
         return optionsObj
     }
 
+    const goalData = () => {
+        const yearsGoalsArr = goals[currentYear].goals
+        const elemArr = []
+
+        for ( let i = 0; i < yearsGoalsArr.length; i++ ) {
+            elemArr.push(
+                <CardGoal
+                    key={i}
+                    dataObj={yearsGoalsArr[i]}
+                />
+            )
+        }
+
+        return elemArr
+    }
+
     return(
         <Layout>
             <div className="year-selector-section">
@@ -34,7 +51,13 @@ const Goals = () => {
                     optionsItems={SelectOptions(goals)}
                 />
             </div>
-            
+            <div className="overview-section">
+                <div className="card-container">
+                    <ul>
+                        { goalData() }
+                    </ul>
+                </div>
+            </div>
         </Layout>
     )
 }
