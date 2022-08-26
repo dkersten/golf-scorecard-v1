@@ -32,17 +32,40 @@ const CardGoal = (props) => {
     const completionProgressNumsComponent = () => {
         if (progress.current >= progress.total) {
             return(
-                <span className="number-count">
-                    {progress.total}/{progress.total} complete
+                <span className="completion-count">
+                    {progress.total}/{progress.total}
                 </span>
             )
         } else {
             return(
-                <span className="number-count">
-                    {progress.current}/{progress.total} complete
+                <span className="completion-count">
+                    {progress.current}/{progress.total}
                 </span>
             )
         }
+    }
+
+    const completionProgressBarComponent = () => {
+        let completedPercentage
+        if (progress.current >= progress.total) {
+            completedPercentage = 100
+        } else if (progress.current === 0) {
+            completedPercentage = 0
+        } else {
+            completedPercentage = Math.floor((progress.current / progress.total) * 100)
+        }
+
+        console.log(completedPercentage)
+        return(
+            <div className="progress-bar-container">
+                <div className="progress-bar-bg"></div>
+                <div
+                    style={{ width: `${completedPercentage}%` }}
+                    className="progress-bar"
+                >
+                </div>
+            </div>
+        )
     }
 
     const renderCardContent = () => {
@@ -55,9 +78,8 @@ const CardGoal = (props) => {
                             <h2>{ description }</h2>
                         </div>
                         <div className="flex-progress-container">
-                            <span className='completion-count'>
-                                { completionProgressNumsComponent() }
-                            </span>
+                            { completionProgressNumsComponent() }
+                            { completionProgressBarComponent() }
                         </div>
                     </div>
                 </div>
@@ -71,9 +93,8 @@ const CardGoal = (props) => {
                             <h2>{ description }</h2>
                         </div>
                         <div className="flex-progress-container">
-                            <span className='completion-count'>
-                                { completionProgressNumsComponent() }
-                            </span>
+                            { completionProgressNumsComponent() }
+                            { completionProgressBarComponent() }
                         </div>
                     </div>
                 </div>

@@ -34,7 +34,8 @@
             flex: 1;
             padding: $s-lg3;
             max-width: 1250px;
-            margin: auto;
+            margin-left: auto;
+            margin-right: auto;
 
             @media only screen and (max-width: 1120px) {
                 padding-left: calc($s-lg3 + (($s-md2 * 2) + 22px));

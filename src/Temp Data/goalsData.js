@@ -62,7 +62,7 @@ const goals = {
             {
                 type: "cumulative",
                 description: "Play 15 rounds",
-                completed: false,
+                completed: true,
                 progress: {
                     current: 17,
                     total: 15
@@ -77,8 +77,8 @@ const goals = {
                 description: "Play in 15 different states",
                 completed: false,
                 progress: {
-                    current: 17,
-                    total: 18
+                    current: 4,
+                    total: 15
                 }
             },
             {
