@@ -1,5 +1,5 @@
 const courses = {
-    totalPlayed: 14,
+    totalPlayed: 15,
     statesPlayed: 4,
     countriesPlayed: 1,
     courses: [
@@ -97,6 +97,13 @@ const courses = {
         {
             name: "Churchville GC",
             city: "Rochester",
+            state: "NY",
+            country: "USA",
+            year: "2022"
+        },
+        {
+            name: "Crag Burn",
+            city: "East Aurora",
             state: "NY",
             country: "USA",
             year: "2022"
