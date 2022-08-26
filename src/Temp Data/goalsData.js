@@ -4,7 +4,11 @@ const goals = {
            {
                 type: "bool",
                 description: "Break 80",
-                completed: false
+                completed: false,
+                progress: {
+                    current: 0,
+                    total: 1
+                }
            },
            {
                 type: "cumulative",
@@ -40,12 +44,20 @@ const goals = {
             {
                 type: "bool",
                 description: "Break 85",
-                completed: true
+                completed: true,
+                progress: {
+                    current: 1,
+                    total: 1
+                }
             },
             {
                 type: "bool",
                 description: "Break 80",
-                completed: false
+                completed: false,
+                progress: {
+                    current: 0,
+                    total: 1
+                }
             },
             {
                 type: "cumulative",
@@ -81,7 +93,11 @@ const goals = {
             {
                 type: "bool",
                 description: "Beat Dave in match play",
-                completed: false
+                completed: false,
+                progress: {
+                    current: 0,
+                    total: 1
+                }
             }
         ]
     }

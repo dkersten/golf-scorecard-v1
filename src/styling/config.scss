@@ -36,6 +36,7 @@ $color-font-light-theme: #56595D;
 $color-danger: #DE3142;
 $color-success: #1A8754;
 $color-warning: #ffe0b2;
+$color-completed: #b49759;
 
 /////// spacing
 $s-sm1: .25rem;
@@ -127,6 +128,7 @@ $font-xxl: 2.5rem;
         flex-wrap: wrap;
         padding: 0;
         margin: 0;
+        row-gap: $s-md1;
     
         @media only screen and (max-width: 767px) {
             row-gap: $s-md2;

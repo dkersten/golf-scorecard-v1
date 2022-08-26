@@ -12,6 +12,7 @@
     flex-basis: calc(33.333% - (($s-md1 + $s-md1)) / 3);
     position: relative;
     z-index: 1;
+    row-gap: $s-sm4;
 
     &:not(:last-of-type) {
         margin-right: $s-md1;

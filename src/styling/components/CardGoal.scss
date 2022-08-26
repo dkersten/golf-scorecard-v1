@@ -3,18 +3,36 @@
 .card-goal {
     box-shadow: $bs-lg;
     list-style: none;
-    background: radial-gradient($color-primary, $color-primary-l1);
+    background: radial-gradient($color-primary, $color-primary-d1);
     border-radius: $br-lg;
     padding: $s-md3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-basis: calc(33.33333% - (($s-md1 + $s-md1)) / 3);
     position: relative;
     z-index: 1;
-    color: $color-white;
 
-    &:not(:last-of-type) {
+    &:not(:nth-of-type(3n)) {
         margin-right: $s-md1;
+    }
+
+    svg {
+        width: 60px;
+    }
+
+    .completed svg {
+        fill: $color-completed;
+    }
+
+    .incomplete svg {
+        fill: $color-primary-d4;
+    }
+
+    .flex-info {
+        margin-top: $s-md4;
+    }
+
+    h2 {
+        color: $color-white;
+        font-size: $font-md2;
+        line-height: 1.3;
     }
 }
