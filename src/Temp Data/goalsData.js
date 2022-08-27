@@ -1,5 +1,7 @@
 const goals = {
     2022: {
+        displayName: "2022",
+        selectValue: "2022",
         goals: [
            {
                 type: "bool",
@@ -15,7 +17,7 @@ const goals = {
                 description: "Play 35 rounds",
                 completed: false,
                 progress: {
-                    current: 26,
+                    current: 27,
                     total: 35
                 }
             },
@@ -40,6 +42,8 @@ const goals = {
         ]
     },
     2021: {
+        displayName: "2021",
+        selectValue: "2021",
         goals: [
             {
                 type: "bool",
@@ -71,6 +75,8 @@ const goals = {
         ]
     },
     alltime: {
+        displayName: "All Time",
+        selectValue: "alltime",
         goals: [
             {
                 type: "cumulative",

@@ -1,8 +1,9 @@
 const rounds = {
     2022: {
         displayName: "2022",
-        roundsPlayed: 26,
-        holesPlayed: 297,
+        selectValue: "2022",
+        roundsPlayed: 27,
+        holesPlayed: 306,
         coursesPlayed: 6,
         graphDataRounds: [
             {name: 'Apr', rounds: 2},
@@ -252,11 +253,21 @@ const rounds = {
                 course: "Crag Burn CC",
                 numHoles: 18,
                 stats: false
+            },
+            {
+                date: {
+                    full: "August 26",
+                    mobile: "8/26"
+                },
+                course: "Brighton GC",
+                numHoles: 9,
+                stats: false
             }
         ]
     },
     2021: {
         displayName: "2021",
+        selectValue: "2021",
         roundsPlayed: 17,
         holesPlayed: 198,
         coursesPlayed: 4,
@@ -436,6 +447,7 @@ const rounds = {
     },
     alltime: {
         displayName: "All Time",
+        selectValue: "alltime",
         roundsPlayed: 43,
         holesPlayed: 495,
         coursesPlayed: 8,

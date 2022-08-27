@@ -2,6 +2,17 @@
 import '../styling/components/Select.scss'
 
 const SelectWithState = (props) => {
+
+    const buildOptionValues = () => {
+        const selectElArr = []
+        for (const [key, val] of Object.entries(props.optionsItems)) {
+            selectElArr.push(
+                <option value={key}>{val}</option>
+            )
+        }
+        return selectElArr
+    }
+
     return(
         <form>
             <div className="dropdown-container">
@@ -16,9 +27,7 @@ const SelectWithState = (props) => {
                     defaultValue={props.defaultVal}
                     onChange={(e) => props.setCurrentState(e.target.value)}
                 >
-                    <option value="2021">2021</option>
-                    <option defaultValue value="2022">2022</option>
-                    <option value="alltime">All Time</option>
+                    { buildOptionValues() }
                 </select>
             </div>
         </form>
