@@ -5,6 +5,7 @@ import Rounds from './Pages/Rounds'
 import Yardages from './Pages/Yardages'
 import Courses from './Pages/Courses'
 import Goals from './Pages/Goals'
+import Milestones from './Pages/Achievements'
 
 // styling
 import './styling/App.scss';
@@ -22,6 +23,7 @@ function App() {
           <Route path="/yardages" element={<Yardages />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/goals" element={<Goals />} />
+          <Route path="/milestones" element={<Milestones />} />
         </Routes>
     </div>
   );

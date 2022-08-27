@@ -14,6 +14,7 @@ import { ReactComponent as CloseIcon } from '../Assets/Icons/close-icon.svg'
 import { ReactComponent as YardagesIcon } from '../Assets/Icons/ruler-icon.svg'
 import { ReactComponent as CoursesIcon } from '../Assets/Icons/golf-hole-light-icon.svg'
 import { ReactComponent as GoalsIcon } from '../Assets/Icons/goals-icon-light.svg'
+import { ReactComponent as MilestonesIcon } from '../Assets/Icons/milestones-icon.svg'
 
 const Nav = () => {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -89,6 +90,14 @@ const Nav = () => {
                             <GoalsIcon />
                         </div>
                         <span>Seasonal Goals</span>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/milestones">
+                        <div className="icon-container">
+                            <MilestonesIcon style={{marginLeft: '4px'}} />
+                        </div>
+                        <span>Milestones</span>
                     </Link>
                 </li>
             </ul>
