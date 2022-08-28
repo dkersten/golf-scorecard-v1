@@ -2,9 +2,9 @@
 import { iconComponent, completionProgressNumsComponent, completionProgressBarComponent } from '../Helpers/GoalsCardComponents'
 
 // styling
-import '../styling/components/CardGoal.scss'
+import '../styling/components/CardAchievement.scss'
 
-const CardGoal = (props) => {
+const CardAchievement = (props) => {
     let {
         type: goalType,
         description: goalDescription,
@@ -41,4 +41,4 @@ const CardGoal = (props) => {
     )
 }
 
-export default CardGoal
+export default CardAchievement

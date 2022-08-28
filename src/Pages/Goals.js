@@ -1,7 +1,7 @@
 // components
 import Layout from "../Layout"
 import SelectWithState from "../Components/SelectWithState"
-import CardGoal from "../Components/CardGoal"
+import CardAchievement from "../Components/CardAchievement"
 
 // data
 import goals from "../Temp Data/goalsData"
@@ -29,7 +29,7 @@ const Goals = () => {
 
         for ( let i = 0; i < yearsGoalsArr.length; i++ ) {
             elemArr.push(
-                <CardGoal
+                <CardAchievement
                     key={i}
                     dataObj={yearsGoalsArr[i]}
                 />

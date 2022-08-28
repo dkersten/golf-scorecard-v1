@@ -5,7 +5,7 @@ import Rounds from './Pages/Rounds'
 import Yardages from './Pages/Yardages'
 import Courses from './Pages/Courses'
 import Goals from './Pages/Goals'
-import Milestones from './Pages/Achievements'
+import Milestones from './Pages/Milestones'
 
 // styling
 import './styling/App.scss';
