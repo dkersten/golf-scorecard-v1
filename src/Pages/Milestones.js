@@ -7,19 +7,21 @@ import MilestoneData from "../Temp Data/MilestonesData"
 
 const Milestones = () => {
     return(
-        <Layout clasName="milestone-page">
-            <MilestoneSection
-                category="Rounds Scoring"
-                data={MilestoneData.roundScoring}
-            />
-            <MilestoneSection
-                category="Holes Scoring"
-                data={MilestoneData.holeScoring}
-            />
-            <MilestoneSection
-                category="Rounds Played"
-                data={MilestoneData.numRounds}
-            />
+        <Layout>
+            <div className="milestone-page">
+                <MilestoneSection
+                    category="Rounds Scoring"
+                    data={MilestoneData.roundScoring}
+                />
+                <MilestoneSection
+                    category="Holes Scoring"
+                    data={MilestoneData.holeScoring}
+                />
+                <MilestoneSection
+                    category="Rounds Played"
+                    data={MilestoneData.numRounds}
+                />
+            </div>
         </Layout>
     )
 }

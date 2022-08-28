@@ -1,9 +1,16 @@
 @import "../config.scss";
 
-.overview-section {
-    .card-container {
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: $s-md1;
+.milestone-page {
+
+    h2 {
+        margin-bottom: $s-md3;
+    }
+
+    .overview-section {
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: $s-md1;
+        }
     }
 }
