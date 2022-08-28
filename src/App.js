@@ -12,6 +12,7 @@ import './styling/App.scss';
 
 // libraries
 import { Routes, Route } from "react-router-dom";
+import Scorecards from './Pages/Scorecards'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/courses" element={<Courses />} />
           <Route path="/goals" element={<Goals />} />
           <Route path="/milestones" element={<Milestones />} />
+          <Route path="/scorecards" element={<Scorecards />} />
         </Routes>
     </div>
   );

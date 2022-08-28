@@ -14,7 +14,7 @@ const Milestones = () => {
                     data={MilestoneData.roundScoring}
                 />
                 <MilestoneSection
-                    category="Holes Scoring"
+                    category="Individual Hole"
                     data={MilestoneData.holeScoring}
                 />
                 <MilestoneSection
