@@ -123,6 +123,10 @@ $font-xxl: 2.5rem;
 .overview-section {
     margin-bottom: $s-lg3;
 
+    h2 {
+        margin-bottom: $s-md3;
+    }
+
     ul {
         display: flex;
         flex-wrap: wrap;
