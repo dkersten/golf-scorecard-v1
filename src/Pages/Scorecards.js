@@ -63,8 +63,8 @@ const Scorecards = () => {
             </div>
             <Table
                 bodyData={scores.scores}
-                headerColumns={["#", "Date", "Holes Played", "Score", "Hole by Hole", "Advanced Stats"]}
-                classlist={["scores-table"]}
+                headerColumns={["#", "Date", "Course", "Holes Played", "Total Score", "Hole by Hole", "Stats"]}
+                classList={["rounds-table"]}
                 iconInfo={{
                     icon: <StatsIcon />,
                     link: "#"

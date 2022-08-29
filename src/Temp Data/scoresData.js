@@ -6,7 +6,10 @@ const scores = {
     totalScoresInput: 3,
     scores: [
         {
-            date: "8/19/2022",
+            date: {
+                full: "8/19/22",
+                mobile: "8/19/22"
+            },
             holesPlayed: 9,
             score: 41,
             course: "Churchville GC",
@@ -14,7 +17,10 @@ const scores = {
             advancedStats: false
         },
         {
-            date: "6/12/2022",
+            date: {
+                full: "6/12/22",
+                mobile: "6/12/22"
+            },
             holesPlayed: 18,
             score: 80,
             course: "Brighton Park GC",
@@ -96,7 +102,10 @@ const scores = {
             }
         },
         {
-            date: "4/20/2021",
+            date: {
+                full: "4/20/21",
+                mobile: "4/20/21"
+            },
             holesPlayed: 9,
             score: 39,
             course: "Brighton Park GC",
