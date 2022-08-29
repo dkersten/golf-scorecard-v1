@@ -1,14 +1,20 @@
 // components
-import ScorcardCoverviewCard from "../Components/ScorecardOverviewCard"
+// import ScorcardCoverviewCard from "../Components/ScorecardOverviewCard"
 import Layout from "../Layout"
 import CardOverview from "../Components/CardOverview"
+import Table from "../Components/Table"
+
+// data
+import scores from "../Temp Data/scoresData"
 
 // assets
 import { ReactComponent as GolfClubIcon } from '../Assets/Icons/golf-club-light-icon.svg'
 import { ReactComponent as GolfballTeeIcon } from '../Assets/Icons/golfball-tee-light-icon.svg'
 import { ReactComponent as GolfHoleIcon } from '../Assets/Icons/golf-hole-light-icon.svg'
+import { ReactComponent as StatsIcon } from '../Assets/Icons/mixed-char-icon.svg'
 
 const Scorecards = () => {
+    console.log(scores.scores)
     return(
         <Layout>
             <div className="overview-section">
@@ -55,7 +61,17 @@ const Scorecards = () => {
                     </ul>
                 </div>
             </div>
-            <ScorcardCoverviewCard />
+            <Table
+                bodyData={scores.scores}
+                headerColumns={["#", "Date", "Holes Played", "Score", "Hole by Hole", "Advanced Stats"]}
+                classlist={["scores-table"]}
+                iconInfo={{
+                    icon: <StatsIcon />,
+                    link: "#"
+                }}
+                hideIndex={false}
+                fullTable={false}
+            />
         </Layout>
     )
 }
