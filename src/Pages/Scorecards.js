@@ -14,7 +14,7 @@ import { ReactComponent as GolfHoleIcon } from '../Assets/Icons/golf-hole-light-
 import { ReactComponent as StatsIcon } from '../Assets/Icons/mixed-char-icon.svg'
 
 const Scorecards = () => {
-    console.log(scores.scores)
+    // console.log(scores.scores)
     return(
         <Layout>
             <div className="overview-section">
@@ -63,7 +63,7 @@ const Scorecards = () => {
             </div>
             <Table
                 bodyData={scores.scores}
-                headerColumns={["#", "Date", "Course", "Holes Played", "Total Score", "Hole by Hole", "Stats"]}
+                headerColumns={["#", "Date", "Holes Played", "Score", "Course", "Stats"]}
                 classList={["rounds-table"]}
                 iconInfo={{
                     icon: <StatsIcon />,
@@ -71,6 +71,7 @@ const Scorecards = () => {
                 }}
                 hideIndex={false}
                 fullTable={false}
+                scorecards={true}
             />
         </Layout>
     )

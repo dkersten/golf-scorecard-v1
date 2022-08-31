@@ -16,6 +16,26 @@ const Table = (props) => {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 950)
     const [requestAdditionalData, setRequestAdditionalData] = useState(false)
 
+    // const MyFunc = () => {
+    //     if (props.scorecards) {
+    //         for (let i = 0; i < props.bodyData.length; i++) {
+    //             // console.log(props.bodyData[i])
+    //             if (props.bodyData[i].holeByHole ) {
+    //                 props.bodyData[i].stats = true
+    //             } else if (props.bodyData[i].advancedStats) {
+    //                 props.bodyData[i].stats = true
+    //             } else {
+    //                 props.bodyData[i].stats = false
+    //             }
+    //             delete props.bodyData[i].holeByHole
+    //             delete props.bodyData[i].advancedStats
+
+    //             console.log(props.bodyData[i])
+    //         }
+    //     }
+    // }
+    // MyFunc()
+
     useEffect(() => {
         if (props.fullTable) {
             setRequestAdditionalData(true)
