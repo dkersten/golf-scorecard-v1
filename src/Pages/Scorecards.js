@@ -14,7 +14,6 @@ import { ReactComponent as GolfHoleIcon } from '../Assets/Icons/golf-hole-light-
 import { ReactComponent as StatsIcon } from '../Assets/Icons/mixed-char-icon.svg'
 
 const Scorecards = () => {
-    // console.log(scores.scores)
     return(
         <Layout>
             <div className="overview-section">
