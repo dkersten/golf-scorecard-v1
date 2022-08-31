@@ -31,22 +31,6 @@ const Rounds = () => {
         return optionsObj
     }
 
-    const getCorrectData = () => {
-        const dataFromAPI = rounds[yearChoice].rounds
-        const dataArr = []
-
-        for (let i = 0; i < dataFromAPI.length; i++) {
-            const dataObj = {}
-            dataObj["date"] = dataFromAPI[i].date
-            dataObj["course"] = dataFromAPI[i].course
-            dataObj["numHoles"] = dataFromAPI[i].numHoles
-            dataObj["stats"] = dataFromAPI[i].stats
-            dataArr.push(dataObj)
-        }
-
-        return dataArr
-    }
-
     return(
         <Layout>
             <div className="year-selector-section">
@@ -99,7 +83,7 @@ const Rounds = () => {
                 </div>
             </div>
             <Table
-                bodyData={getCorrectData()}
+                bodyData={rounds[yearChoice].rounds}
                 headerColumns={["#", "Date", "Course", "Holes Played", "Stats"]}
                 classList={["rounds-table"]}
                 iconInfo={{

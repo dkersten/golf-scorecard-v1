@@ -15,6 +15,8 @@ const renderBodyRows = (data, icon, isMobile, i, bodyRows, hideIndex) => {
             rowTDs.push(<td key={key}>
                 {isMobile ? data[i][key].mobile : data[i][key].full}
             </td>)
+        } else if (key === "roundId") {
+            // do nothing. Don't want this cell rendered in the table. We are adding an attribute to the stats cell below
         } else {
             if (typeof data[i][key] === 'string') {
                 rowTDs.push(<td key={key}>{ data[i][key] }</td>)
@@ -22,9 +24,9 @@ const renderBodyRows = (data, icon, isMobile, i, bodyRows, hideIndex) => {
                 rowTDs.push(<td key={key}>{ data[i][key] }</td>)
             } else if (typeof data[i][key] === 'boolean') {
                 if (data[i][key] === true) {
-                    rowTDs.push(<td key={key}>{ renderIcon(icon) }</td>) 
+                    rowTDs.push(<td data-id={data[i].roundId}  key={key}>{ renderIcon(icon) }</td>) 
                 } else {
-                    rowTDs.push(<td key={key}>{ null }</td>)
+                    rowTDs.push(<td data-id={data[i].roundId} key={key}>{ null }</td>)
                 }
             }
         }
