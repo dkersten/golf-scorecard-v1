@@ -1,0 +1,9 @@
+@import '../config.scss';
+
+.scorecard {
+    display: inline-block;
+    background: $color-offwhite1;
+    border-radius: $br-lg;
+    margin: auto;
+    box-shadow: $bs-lg;
+}

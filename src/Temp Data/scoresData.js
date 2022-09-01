@@ -13,7 +13,9 @@ const scores = {
             holesPlayed: 9,
             score: 41,
             course: "Churchville GC",
-            stats: false
+            stats: false,
+            holeByHole: false,
+            roundId: 42
         },
         {
             date: {
@@ -24,6 +26,9 @@ const scores = {
             score: 80,
             course: "Brighton Park GC",
             stats: true,
+            holeByHole: true,
+            advancedStats: false,
+            roundId: 26,
             holes: {
                 1: {
                     par: 4,
@@ -108,6 +113,9 @@ const scores = {
             score: 39,
             course: "Brighton Park GC",
             stats: true,
+            holeByHole: true,
+            advancedStats: true,
+            roundId: 1,
             holes: {
                 1: {
                     par: 4,

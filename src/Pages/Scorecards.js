@@ -1,8 +1,8 @@
 // components
-// import ScorcardCoverviewCard from "../Components/ScorecardOverviewCard"
 import Layout from "../Layout"
 import CardOverview from "../Components/CardOverview"
 import Table from "../Components/Table"
+import Scorecard from "../Components/Scorecard"
 
 // data
 import scores from "../Temp Data/scoresData"
@@ -72,6 +72,10 @@ const Scorecards = () => {
                 fullTable={false}
                 scorecards={true}
             />
+
+            <div style={{marginTop: '3rem'}} className="overview-section">
+                <Scorecard />
+            </div>
         </Layout>
     )
 }
