@@ -1,9 +1,71 @@
 @import '../config.scss';
 
 .scorecard {
+    // temp styling
     display: inline-block;
+    margin: auto auto 2rem;
+    // border: 1px solid $color-offwhite3;
+    width: 100%;
+
+    // regular styling
     background: $color-offwhite1;
     border-radius: $br-lg;
-    margin: auto;
     box-shadow: $bs-lg;
+    padding: $s-lg1;
+
+    .header {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .score-container, .score, .score span {
+        line-height: 1;
+    }
+
+    .score-container {
+        margin-right: $s-lg3;
+        position: relative;
+    }
+
+    .score {
+        font-size: 3.75rem;
+        font-weight: 700;
+
+        span {
+            color: $color-primary-l1;
+            letter-spacing: -2px;
+            line-height: 1;
+        }
+    }
+
+    .info-container {
+        margin-bottom: -.55rem;
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex-item-container {
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: $s-sm4;
+
+            &:not(:last-of-type) {
+                margin-right: $s-md4;
+            }
+        }
+
+        svg {
+            width: auto;
+            height: 25px;
+            fill: $color-offwhite3;
+            margin-right: $s-sm3;
+        }
+
+        p {
+            font-size: $font-md2;
+            margin-bottom: 0;
+            line-height: 1;
+        }
+    }
 }

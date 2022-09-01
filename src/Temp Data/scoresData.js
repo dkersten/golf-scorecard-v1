@@ -15,6 +15,7 @@ const scores = {
             course: "Churchville GC",
             stats: false,
             holeByHole: false,
+            advancedStats: false,
             roundId: 42
         },
         {
