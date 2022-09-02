@@ -15,7 +15,8 @@
 
     .header {
         display: flex;
-        align-items: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
     }
 
     .score-container, .score, .score span {
@@ -23,7 +24,7 @@
     }
 
     .score-container {
-        margin-right: $s-lg3;
+        margin-bottom: $s-md3;
         position: relative;
     }
 
@@ -66,6 +67,26 @@
             font-size: $font-md2;
             margin-bottom: 0;
             line-height: 1;
+        }
+    }
+
+    .body {
+        margin-top: $s-lg1;
+
+        table {
+            box-shadow: $bs-sm;
+            border-radius: $br-lg;
+
+            thead {
+                background: radial-gradient($color-primary, $color-primary-l1);
+
+                td {
+                    color: $color-white;
+                }
+            }
+        }
+        .front {
+            margin-bottom: $s-lg1;
         }
     }
 }
