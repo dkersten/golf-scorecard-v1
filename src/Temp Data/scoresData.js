@@ -176,7 +176,7 @@ const scores = {
                 },
                 9: {
                     par: 4,
-                    score: 5,
+                    score: 4,
                     fir: true,
                     gir: true,
                     putts: 3
