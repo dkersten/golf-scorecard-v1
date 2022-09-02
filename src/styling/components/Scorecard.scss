@@ -85,8 +85,13 @@
                 }
             }
         }
+
         .front {
             margin-bottom: $s-lg1;
+        }
+
+        p.no-stats {
+            font-size: $font-md2;
         }
     }
 }

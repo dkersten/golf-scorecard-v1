@@ -4,7 +4,7 @@ import { ReactComponent as CourseIcon } from '../Assets/Icons/location-solid-ico
 import { ReactComponent as DateIcon } from '../Assets/Icons/calendar-solid-icon.svg'
 
 // libraries/helpers
-import { renderFrontTableHeader, renderFrontParRow, renderFrontScoreRow } from '../Helpers/ScorecardTableComponents'
+import { renderFrontTableHeader, renderFrontParRow, renderFrontScoreRow, renderBackTableHeader, renderBackParRow, renderBackScoreRow } from '../Helpers/ScorecardTableComponents'
 
 // styling
 import '../styling/components/Scorecard.scss'
@@ -24,11 +24,20 @@ const Scorecard = (props) => {
                 </tbody>
             </table>
         )
-        // return "there is a front 9"
     }
 
     const renderBackNine = () => {
-        return "there is a back 9"
+        return(
+            <table className='front'>
+                <thead>
+                    <tr>{ renderBackTableHeader(props.holes) }</tr>
+                </thead>
+                <tbody>
+                    <tr>{ renderBackParRow(props.holes) }</tr>
+                    <tr>{ renderBackScoreRow(props.holes) }</tr>
+                </tbody>
+            </table>
+        )
     }
 
     return(
@@ -62,7 +71,7 @@ const Scorecard = (props) => {
                         ?
                             renderFrontNine()
                         :
-                            "No stats were recorded"
+                            <p className='no-stats'>No stats were recorded</p>
                 }
                 { 
                     (props.holes && props.holesPlayed === 18)
@@ -71,51 +80,6 @@ const Scorecard = (props) => {
                         :
                             null
                 }
-                <table className='back'>
-                    <thead>
-                        <tr>
-                            <td>Hole</td>
-                            <td>10</td>
-                            <td>11</td>
-                            <td>12</td>
-                            <td>13</td>
-                            <td>14</td>
-                            <td>15</td>
-                            <td>16</td>
-                            <td>17</td>
-                            <td>18</td>
-                            <td>In</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Par</td>
-                            <td>5</td>
-                            <td>4</td>
-                            <td>4</td>
-                            <td>4</td>
-                            <td>4</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>3</td>
-                            <td>5</td>
-                            <td>36</td>
-                        </tr>
-                        <tr>
-                            <td>Score</td>
-                            <td>6</td>
-                            <td>4</td>
-                            <td>5</td>
-                            <td>5</td>
-                            <td>4</td>
-                            <td>4</td>
-                            <td>4</td>
-                            <td>3</td>
-                            <td>5</td>
-                            <td>40</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
     )
