@@ -101,4 +101,19 @@ const renderGreensInReg = (holes, startingHole) => {
     return tdArr
 }
 
-export { renderScorecardTableHeader, renderScorecardTableBodyRow, renderFairwaysInReg, renderGreensInReg }
+const renderPutts = (holes, startingHole) => {
+    const tdArr = []
+    tdArr.push(<td>Putts</td>)
+
+    let totalPutts = 0
+
+    for (let i = startingHole; i < (startingHole + 9); i++) {
+        tdArr.push(<td>{ holes[i].putts }</td>)
+        totalPutts += holes[i].putts
+    }
+
+    tdArr.push(<td>{ totalPutts }</td>)
+    return tdArr
+}
+
+export { renderScorecardTableHeader, renderScorecardTableBodyRow, renderFairwaysInReg, renderGreensInReg, renderPutts }
