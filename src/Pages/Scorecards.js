@@ -171,8 +171,8 @@ const Scorecards = () => {
                     holesPlayed={9}
                     score={39}
                     course="Brighton Park GC"
-                    stats={false}
-                    holeByHole={false}
+                    stats={true}
+                    holeByHole={true}
                     advancedStats={true}
                     holes={{
                         1: {
@@ -234,6 +234,80 @@ const Scorecards = () => {
                         9: {
                             par: 4,
                             score: 4,
+                            fir: true,
+                            gir: true,
+                            putts: 3
+                        }
+                    }}
+                />
+                <Scorecard
+                    date="7/20/20"
+                    holesPlayed={9}
+                    score={40}
+                    course="Brighton Park GC"
+                    stats={true}
+                    holeByHole={true}
+                    advancedStats={true}
+                    holes={{
+                        10: {
+                            par: 5,
+                            score: 5,
+                            fir: true,
+                            gir: true,
+                            putts: 2
+                        },
+                        11: {
+                            par: 4,
+                            score: 5,
+                            fir: null,
+                            gir: false,
+                            putts: 2
+                        },
+                        12: {
+                            par: 4,
+                            score: 4,
+                            fir: "left",
+                            gir: false,
+                            putts: 1
+                        },
+                        13: {
+                            par: 4,
+                            score: 6,
+                            fir: true,
+                            gir: true,
+                            putts: 2
+                        },
+                        14: {
+                            par: 4,
+                            score: 4,
+                            fir: "right",
+                            gir: false,
+                            putts: 2
+                        },
+                        15: {
+                            par: 3,
+                            score: 3,
+                            fir: true,
+                            gir: true,
+                            putts: 2
+                        },
+                        16: {
+                            par: 4,
+                            score: 5,
+                            fir: "left",
+                            gir: true,
+                            putts: 3
+                        },
+                        17: {
+                            par: 3,
+                            score: 3,
+                            fir: null,
+                            gir: false,
+                            putts: 1
+                        },
+                        18: {
+                            par: 5,
+                            score: 5,
                             fir: true,
                             gir: true,
                             putts: 3

@@ -21,8 +21,8 @@ const Scorecard = (props) => {
                     <tr>{ renderScorecardTableHeader(props.holes, startingHole) }</tr>
                 </thead>
                 <tbody>
-                    <tr>{ renderScorecardTableBodyRow(props.holes, 1, "par") }</tr>
-                    <tr>{ renderScorecardTableBodyRow(props.holes, 1, "score") }</tr>
+                    <tr>{ renderScorecardTableBodyRow(props.holes, startingHole, "par") }</tr>
+                    <tr>{ renderScorecardTableBodyRow(props.holes, startingHole, "score") }</tr>
                 </tbody>
             </table>
         )
@@ -37,8 +37,8 @@ const Scorecard = (props) => {
                     <tr>{ renderScorecardTableHeader(props.holes, startingHole) }</tr>
                 </thead>
                 <tbody>
-                    <tr>{ renderScorecardTableBodyRow(props.holes, 10, "par") }</tr>
-                    <tr>{ renderScorecardTableBodyRow(props.holes, 10, "score") }</tr>
+                    <tr>{ renderScorecardTableBodyRow(props.holes, startingHole, "par") }</tr>
+                    <tr>{ renderScorecardTableBodyRow(props.holes, startingHole, "score") }</tr>
                 </tbody>
             </table>
         )
