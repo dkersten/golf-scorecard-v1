@@ -4,7 +4,7 @@ import { ReactComponent as CourseIcon } from '../Assets/Icons/location-solid-ico
 import { ReactComponent as DateIcon } from '../Assets/Icons/calendar-solid-icon.svg'
 
 // libraries/helpers
-import { renderScorecardTableHeader, renderScorecardTableBodyRow, renderFairwaysInReg } from '../Helpers/ScorecardTableComponents'
+import { renderScorecardTableHeader, renderScorecardTableBodyRow, renderFairwaysInReg, renderGreensInReg } from '../Helpers/ScorecardTableComponents'
 
 // styling
 import '../styling/components/Scorecard.scss'
@@ -39,6 +39,13 @@ const Scorecard = (props) => {
                             :
                                 null
                     }
+                    {
+                        props.advancedStats
+                            ?
+                                <tr>{ renderGreensInReg(props.holes, startingHole) }</tr>
+                            :
+                                null
+                    }
                 </tbody>
             </table>
         )
@@ -70,6 +77,13 @@ const Scorecard = (props) => {
                         props.advancedStats
                             ?
                                 <tr>{ renderFairwaysInReg(props.holes, startingHole) }</tr>
+                            :
+                                null
+                    }
+                    {
+                        props.advancedStats
+                            ?
+                                <tr>{ renderGreensInReg(props.holes, startingHole) }</tr>
                             :
                                 null
                     }

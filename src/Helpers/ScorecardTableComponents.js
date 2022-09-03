@@ -1,6 +1,7 @@
 import { ReactComponent as CrosshairsIcon } from '../Assets/Icons/crosshairs-light-icon.svg'
 import { ReactComponent as ArrowLeftIcon } from '../Assets/Icons/arrow-left-light-icon.svg'
 import { ReactComponent as ArrowRightIcon } from '../Assets/Icons/arrow-right-light-icon.svg'
+import { ReactComponent as XIcon } from '../Assets/Icons/x-icon-light.svg'
 
 const renderScorecardTableHeader = (holes, holesArr) => {
     const tdArr = []
@@ -45,7 +46,7 @@ const renderFairwaysInReg = (holes, startingHole) => {
     // loop through holes and render left, right, hit, NA and add to hit fairways and total fairways to calculate percentage
     for (let i = startingHole; i < (startingHole + 9); i++) {
         if (holes[i].fir === true) {
-            tdArr.push(<td><CrosshairsIcon /></td>)
+            tdArr.push(<td className='color-primary'><CrosshairsIcon /></td>)
             hitFairways += 1
             totalFairways += 1
 
@@ -65,12 +66,39 @@ const renderFairwaysInReg = (holes, startingHole) => {
     }
 
     // calculate percentage
-    let firPertentage = (hitFairways / totalFairways)
-    firPertentage = firPertentage * 100
-    firPertentage = Math.round(firPertentage * 100) / 100
+    let firPercentage = (hitFairways / totalFairways)
+    firPercentage = firPercentage * 100
+    firPercentage = Math.round(firPercentage * 100) / 100
 
-    tdArr.push(<td>{firPertentage}%</td>)
+    tdArr.push(<td>{firPercentage}%</td>)
     return tdArr
 }
 
-export { renderScorecardTableHeader, renderScorecardTableBodyRow, renderFairwaysInReg }
+const renderGreensInReg = (holes, startingHole) => {
+    const tdArr = []
+    tdArr.push(<td>GiR</td>)
+
+    let hitGreens = 0
+    let totalGreens = 0
+
+    for (let i = startingHole; i < (startingHole + 9); i++) {
+        if (holes[i].gir) {
+            tdArr.push(<td className='color-primary'><CrosshairsIcon /></td>)
+            hitGreens += 1
+            totalGreens += 1
+        } else {
+            tdArr.push(<td><XIcon /></td>)
+            totalGreens += 1
+        }
+    }
+
+    // calculate percentage
+    let girPercentage = (hitGreens / totalGreens)
+    girPercentage = girPercentage * 100
+    girPercentage = Math.round(girPercentage * 100) / 100
+
+    tdArr.push(<td>{girPercentage}%</td>)
+    return tdArr
+}
+
+export { renderScorecardTableHeader, renderScorecardTableBodyRow, renderFairwaysInReg, renderGreensInReg }

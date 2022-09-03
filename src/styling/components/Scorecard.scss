@@ -83,19 +83,33 @@
                 td {
                     color: $color-white;
                     text-align: center;
+
+                    &:first-of-type {
+                        text-align: left;
+                        font-weight: 600;
+                    }
                 }
             }
 
             tbody {
                 td {
                     text-align: center;
+
+                    &:first-of-type {
+                        text-align: left;
+                        font-weight: 600;
+                    }
                 }
             }
 
             svg {
                 height: 18px;
                 width: auto;
-                fill: $color-primary-l3;
+                fill: $color-danger;
+            }
+
+            .color-primary svg {
+                fill: $color-success;
             }
         }
 
