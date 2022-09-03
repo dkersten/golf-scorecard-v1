@@ -1,27 +1,12 @@
-const renderScorecardTableHeader = (holes, startingHole) => {
+const renderScorecardTableHeader = (holes, holesArr) => {
     const tdArr = []
     tdArr.push(<td>Hole</td>)
 
-    // loop through applicable 9 holes
-    const holeArr = Object.keys(holes)
-    
-    // convert all hole keys to numbers
-    let holeArrNums = holeArr.map(index => {
-        return parseInt(index)
-    })
-    
-    if (holeArrNums[0] !== 10) {
-        for (let i = (startingHole - 1); i < (startingHole + 8); i++) {
-            tdArr.push(<td>{ holeArrNums[i] }</td>)
-        }
-    } else {
-        for (let i = 0; i < 9; i++) {
-            tdArr.push(<td>{ holeArrNums[i] }</td>)
-        }
+    for (let i = 0; i < holesArr.length; i++) {
+        tdArr.push(<td>{ holesArr[i] }</td>)
     }
 
     tdArr.push(<td>In</td>)
-
     return tdArr
 }
 

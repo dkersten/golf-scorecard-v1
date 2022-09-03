@@ -15,10 +15,19 @@ const Scorecard = (props) => {
         let startingHole = Object.keys(props.holes)[0]
         startingHole = parseInt(startingHole)
 
+        // get array of holes
+        let holeArr = Object.keys(props.holes)
+        holeArr = holeArr.slice(0, 9)
+        
+        // convert all hole keys to numbers
+        holeArr = holeArr.map(index => {
+            return parseInt(index)
+        })
+
         return(
             <table className='front'>
                 <thead>
-                    <tr>{ renderScorecardTableHeader(props.holes, startingHole) }</tr>
+                    <tr>{ renderScorecardTableHeader(props.holes, holeArr) }</tr>
                 </thead>
                 <tbody>
                     <tr>{ renderScorecardTableBodyRow(props.holes, startingHole, "par") }</tr>
@@ -29,12 +38,24 @@ const Scorecard = (props) => {
     }
 
     const renderBackNine = () => {
+        // get starting hole
         let startingHole = Object.keys(props.holes)[9]
-        startingHole = parseInt(startingHole) 
+        startingHole = parseInt(startingHole)
+
+        // get array of holes
+        let holeArr = Object.keys(props.holes)
+        holeArr = holeArr.slice(9, 18)
+        
+        // convert all hole keys to numbers
+        holeArr = holeArr.map(index => {
+            return parseInt(index)
+        })
+        
+        console.log(holeArr)
         return(
             <table className='front'>
                 <thead>
-                    <tr>{ renderScorecardTableHeader(props.holes, startingHole) }</tr>
+                    <tr>{ renderScorecardTableHeader(props.holes, holeArr) }</tr>
                 </thead>
                 <tbody>
                     <tr>{ renderScorecardTableBodyRow(props.holes, startingHole, "par") }</tr>

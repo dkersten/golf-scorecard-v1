@@ -314,6 +314,89 @@ const Scorecards = () => {
                         }
                     }}
                 />
+                <Scorecard
+                    date="6/2/20"
+                    holesPlayed={18}
+                    score={85}
+                    course="Terry Hills GC"
+                    stats={true}
+                    holeByHole={true}
+                    advancedStats={false}
+                    holes={{
+                        10: {
+                            par: 4,
+                            score: 9
+                        },
+                        11: {
+                            par: 3,
+                            score: 3
+                        },
+                        12: {
+                            par: 5,
+                            score: 5
+                        },
+                        13: {
+                            par: 4,
+                            score: 5
+                        },
+                        14: {
+                            par: 4,
+                            score: 5
+                        },
+                        15: {
+                            par: 5,
+                            score: 5
+                        },
+                        16: {
+                            par: 4,
+                            score: 5
+                        },
+                        17: {
+                            par: 3,
+                            score: 3
+                        },
+                        18: {
+                            par: 4,
+                            score: 4
+                        },
+                        19: {
+                            par: 5,
+                            score: 7
+                        },
+                        20: {
+                            par: 4,
+                            score: 4
+                        },
+                        21: {
+                            par: 4,
+                            score: 5
+                        },
+                        22: {
+                            par: 4,
+                            score: 5
+                        },
+                        23: {
+                            par: 4,
+                            score: 4
+                        },
+                        24: {
+                            par: 3,
+                            score: 4
+                        },
+                        25: {
+                            par: 4,
+                            score: 4
+                        },
+                        26: {
+                            par: 3,
+                            score: 3
+                        },
+                        27: {
+                            par: 5,
+                            score: 5
+                        }
+                    }}
+                />
             </div>
         </Layout>
     )
