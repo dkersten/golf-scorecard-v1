@@ -4,7 +4,7 @@ import { ReactComponent as CourseIcon } from '../Assets/Icons/location-solid-ico
 import { ReactComponent as DateIcon } from '../Assets/Icons/calendar-solid-icon.svg'
 
 // libraries/helpers
-import { renderFrontTableHeader, renderFrontParRow, renderFrontScoreRow, renderBackTableHeader, renderBackParRow, renderBackScoreRow } from '../Helpers/ScorecardTableComponents'
+import { renderScorecardTableHeader, renderScorecardTableBodyRow } from '../Helpers/ScorecardTableComponents'
 
 // styling
 import '../styling/components/Scorecard.scss'
@@ -12,29 +12,33 @@ import '../styling/components/Scorecard.scss'
 const Scorecard = (props) => {
 
     const renderFrontNine = () => {
+        let startingHole = Object.keys(props.holes)[0]
+        startingHole = parseInt(startingHole)
 
         return(
             <table className='front'>
                 <thead>
-                    <tr>{ renderFrontTableHeader(props.holes) }</tr>
+                    <tr>{ renderScorecardTableHeader(props.holes, startingHole) }</tr>
                 </thead>
                 <tbody>
-                    <tr>{ renderFrontParRow(props.holes) }</tr>
-                    <tr>{ renderFrontScoreRow(props.holes) }</tr>
+                    <tr>{ renderScorecardTableBodyRow(props.holes, 1, "par") }</tr>
+                    <tr>{ renderScorecardTableBodyRow(props.holes, 1, "score") }</tr>
                 </tbody>
             </table>
         )
     }
 
     const renderBackNine = () => {
+        let startingHole = Object.keys(props.holes)[9]
+        startingHole = parseInt(startingHole) 
         return(
             <table className='front'>
                 <thead>
-                    <tr>{ renderBackTableHeader(props.holes) }</tr>
+                    <tr>{ renderScorecardTableHeader(props.holes, startingHole) }</tr>
                 </thead>
                 <tbody>
-                    <tr>{ renderBackParRow(props.holes) }</tr>
-                    <tr>{ renderBackScoreRow(props.holes) }</tr>
+                    <tr>{ renderScorecardTableBodyRow(props.holes, 10, "par") }</tr>
+                    <tr>{ renderScorecardTableBodyRow(props.holes, 10, "score") }</tr>
                 </tbody>
             </table>
         )
