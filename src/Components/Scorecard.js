@@ -4,7 +4,7 @@ import { ReactComponent as CourseIcon } from '../Assets/Icons/location-solid-ico
 import { ReactComponent as DateIcon } from '../Assets/Icons/calendar-solid-icon.svg'
 
 // libraries/helpers
-import { renderScorecardTableHeader, renderScorecardTableBodyRow } from '../Helpers/ScorecardTableComponents'
+import { renderScorecardTableHeader, renderScorecardTableBodyRow, renderFairwaysInReg } from '../Helpers/ScorecardTableComponents'
 
 // styling
 import '../styling/components/Scorecard.scss'
@@ -32,6 +32,13 @@ const Scorecard = (props) => {
                 <tbody>
                     <tr>{ renderScorecardTableBodyRow(props.holes, startingHole, "par") }</tr>
                     <tr>{ renderScorecardTableBodyRow(props.holes, startingHole, "score") }</tr>
+                    {
+                        props.advancedStats
+                            ?
+                                <tr>{ renderFairwaysInReg(props.holes, startingHole) }</tr>
+                            :
+                                null
+                    }
                 </tbody>
             </table>
         )
@@ -51,7 +58,6 @@ const Scorecard = (props) => {
             return parseInt(index)
         })
         
-        console.log(holeArr)
         return(
             <table className='front'>
                 <thead>
@@ -60,6 +66,13 @@ const Scorecard = (props) => {
                 <tbody>
                     <tr>{ renderScorecardTableBodyRow(props.holes, startingHole, "par") }</tr>
                     <tr>{ renderScorecardTableBodyRow(props.holes, startingHole, "score") }</tr>
+                    {
+                        props.advancedStats
+                            ?
+                                <tr>{ renderFairwaysInReg(props.holes, startingHole) }</tr>
+                            :
+                                null
+                    }
                 </tbody>
             </table>
         )

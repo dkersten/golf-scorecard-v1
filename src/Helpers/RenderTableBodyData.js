@@ -1,7 +1,6 @@
 import RenderTableBodyRows from './RenderTableBodyRows'
 
 const renderInitialBodyData = (data, icon, isMobile, hideIndex) => {
-    // console.log(hideIndex)
     const bodyRows = []
     // loop through array of objects to build out tr elements
     if (data.length >= 10) {

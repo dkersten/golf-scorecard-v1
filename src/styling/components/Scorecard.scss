@@ -82,7 +82,20 @@
 
                 td {
                     color: $color-white;
+                    text-align: center;
                 }
+            }
+
+            tbody {
+                td {
+                    text-align: center;
+                }
+            }
+
+            svg {
+                height: 18px;
+                width: auto;
+                fill: $color-primary-l3;
             }
         }
 
