@@ -11,6 +11,34 @@ import '../styling/components/Scorecard.scss'
 
 const Scorecard = (props) => {
 
+    const renderAdvancedStats = (statType, startingHole) => {
+        if (statType === "fir") {
+            return(
+                props.advancedStats
+                    ?
+                        <tr>{ renderFairwaysInReg(props.holes, startingHole) }</tr>
+                    :
+                        null
+            )
+        } else if (statType === "gir") {
+            return(
+                props.advancedStats
+                    ?
+                        <tr>{ renderGreensInReg(props.holes, startingHole) }</tr>
+                    :
+                        null
+            )
+        } else if (statType === "putts") {
+            return(
+                props.advancedStats
+                    ?
+                        <tr>{ renderPutts(props.holes, startingHole) }</tr>
+                    :
+                        null
+            )
+        }
+    }
+
     const renderFrontNine = () => {
         let startingHole = Object.keys(props.holes)[0]
         startingHole = parseInt(startingHole)
@@ -32,27 +60,9 @@ const Scorecard = (props) => {
                 <tbody>
                     <tr>{ renderScorecardTableBodyRow(props.holes, startingHole, "par") }</tr>
                     <tr>{ renderScorecardTableBodyRow(props.holes, startingHole, "score") }</tr>
-                    {
-                        props.advancedStats
-                            ?
-                                <tr>{ renderFairwaysInReg(props.holes, startingHole) }</tr>
-                            :
-                                null
-                    }
-                    {
-                        props.advancedStats
-                            ?
-                                <tr>{ renderGreensInReg(props.holes, startingHole) }</tr>
-                            :
-                                null
-                    }
-                    {
-                        props.advancedStats
-                            ?
-                                <tr>{ renderPutts(props.holes, startingHole) }</tr>
-                            :
-                                null
-                    }
+                    { renderAdvancedStats("fir", startingHole) }
+                    { renderAdvancedStats("gir", startingHole) }
+                    { renderAdvancedStats("putts", startingHole) }
                 </tbody>
             </table>
         )
@@ -80,27 +90,9 @@ const Scorecard = (props) => {
                 <tbody>
                     <tr>{ renderScorecardTableBodyRow(props.holes, startingHole, "par") }</tr>
                     <tr>{ renderScorecardTableBodyRow(props.holes, startingHole, "score") }</tr>
-                    {
-                        props.advancedStats
-                            ?
-                                <tr>{ renderFairwaysInReg(props.holes, startingHole) }</tr>
-                            :
-                                null
-                    }
-                    {
-                        props.advancedStats
-                            ?
-                                <tr>{ renderGreensInReg(props.holes, startingHole) }</tr>
-                            :
-                                null
-                    }
-                    {
-                        props.advancedStats
-                            ?
-                                <tr>{ renderPutts(props.holes, startingHole) }</tr>
-                            :
-                                null
-                    }
+                    { renderAdvancedStats("fir", startingHole) }
+                    { renderAdvancedStats("gir", startingHole) }
+                    { renderAdvancedStats("putts", startingHole) }
                 </tbody>
             </table>
         )
