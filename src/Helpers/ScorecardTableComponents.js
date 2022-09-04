@@ -68,7 +68,7 @@ const renderFairwaysInReg = (holes, startingHole) => {
     // calculate percentage
     let firPercentage = (hitFairways / totalFairways)
     firPercentage = firPercentage * 100
-    firPercentage = Math.round(firPercentage * 10) / 10
+    firPercentage = Math.round(firPercentage * 1) / 1
 
     tdArr.push(<td>{firPercentage}%</td>)
     return tdArr
@@ -95,7 +95,7 @@ const renderGreensInReg = (holes, startingHole) => {
     // calculate percentage
     let girPercentage = (hitGreens / totalGreens)
     girPercentage = girPercentage * 100
-    girPercentage = Math.round(girPercentage * 10) / 10
+    girPercentage = Math.round(girPercentage * 1) / 1
 
     tdArr.push(<td>{girPercentage}%</td>)
     return tdArr

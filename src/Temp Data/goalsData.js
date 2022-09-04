@@ -17,7 +17,7 @@ const goals = {
                 description: "Play 35 rounds",
                 completed: false,
                 progress: {
-                    current: 27,
+                    current: 28,
                     total: 35
                 }
             },
