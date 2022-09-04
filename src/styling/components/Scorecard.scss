@@ -24,17 +24,17 @@
     }
 
     .score-container {
-        margin-bottom: $s-md3;
+        margin-bottom: $s-md4;
         position: relative;
     }
 
     .score {
-        font-size: 3.75rem;
+        font-size: $font-lg;
         font-weight: 700;
 
         span {
             color: $color-primary-l1;
-            letter-spacing: -2px;
+            letter-spacing: -.25px;
             line-height: 1;
         }
     }
@@ -80,7 +80,7 @@
             thead {
                 background: radial-gradient($color-primary, $color-primary-l1);
 
-                td {
+                th {
                     color: $color-white;
                     text-align: center;
 
@@ -121,4 +121,66 @@
             font-size: $font-md2;
         }
     }
+
+    @media only screen and (max-width: 1029px) {
+        width: auto;
+
+        table {
+            display: flex;
+        }
+
+        thead {
+            border-radius: $br-lg 0 0 $br-lg;
+            
+            tr {
+                display: flex;
+                flex-direction: column;
+            }
+
+            th {
+                height: 65px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                border-bottom: none;
+                border-right: 2px solid $color-offwhite3;
+
+                &:first-of-type {
+                    border-bottom: 1px solid $color-offwhite3;
+                }
+            }
+        }
+
+        tbody {
+            display: flex;
+        }
+
+        tbody tr {
+            display: flex;
+            flex-direction: column;
+
+            &:not(:last-of-type) td {
+                border-bottom: none;
+                border-right: 1px solid $color-offwhite3;
+            }
+
+            td {
+                height: 65px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                &:first-of-type {
+                    border-bottom: 1px solid $color-offwhite3;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        tbody tr td {
+            padding: $s-sm4 $s-sm3;
+        }
+    }
 }
+// table tbody tr:not(:last-of-type) td

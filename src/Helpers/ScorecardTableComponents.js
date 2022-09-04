@@ -5,13 +5,13 @@ import { ReactComponent as XIcon } from '../Assets/Icons/x-icon-light.svg'
 
 const renderScorecardTableHeader = (holes, holesArr) => {
     const tdArr = []
-    tdArr.push(<td>Hole</td>)
+    tdArr.push(<th>Hole</th>)
 
     for (let i = 0; i < holesArr.length; i++) {
-        tdArr.push(<td>{ holesArr[i] }</td>)
+        tdArr.push(<th>{ holesArr[i] }</th>)
     }
 
-    tdArr.push(<td>In</td>)
+    tdArr.push(<th>In</th>)
     return tdArr
 }
 

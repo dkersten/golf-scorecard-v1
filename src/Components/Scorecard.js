@@ -103,7 +103,7 @@ const Scorecard = (props) => {
             <div className="header">
                 <div className="score-container">
                     <div className="score">
-                        <span>{ props.score }</span>
+                        <span>Total Score: { props.score }</span>
                     </div>
                 </div>
                 <div className="info-container">
