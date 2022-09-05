@@ -3,6 +3,9 @@ import Layout from "../Layout"
 import CardOverview from "../Components/CardOverview"
 import Table from "../Components/Table"
 import Scorecard from "../Components/Scorecard"
+import ResuableModal from "../Components/Modal"
+import Button from 'react-bootstrap/Button'
+import {useState } from 'react'
 
 // data
 import scores from "../Temp Data/scoresData"
@@ -14,8 +17,20 @@ import { ReactComponent as GolfHoleIcon } from '../Assets/Icons/golf-hole-light-
 import { ReactComponent as StatsIcon } from '../Assets/Icons/mixed-char-icon.svg'
 
 const Scorecards = () => {
+
+    const [modalShow, setModalShow] = useState(false)
+
     return(
         <Layout>
+            <div style={{marginBottom: '4rem'}}>
+            <Button variant="primary" onClick={() => setModalShow(true)}>
+                Open Modal
+            </Button>
+                <ResuableModal
+                    show={modalShow}
+                    onHide={() => setModalShow(false)}
+                />
+            </div>
             <div className="overview-section">
                 <h2>Best Rounds: 9 Holes</h2>
                 <div className="card-container">
@@ -398,6 +413,7 @@ const Scorecards = () => {
                     }}
                 />
             </div>
+            {/* <Modal /> */}
         </Layout>
     )
 }
