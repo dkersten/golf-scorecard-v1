@@ -87,7 +87,7 @@ const Scorecards = () => {
             />
 
             <div style={{marginTop: '3rem', display: "flex", alignItems: 'center', flexDirection: 'column'}} className="overview-section">
-                <Scorecard
+                {/* <Scorecard
                     date="8/19/22"
                     holesPlayed={9}
                     score={41}
@@ -409,7 +409,7 @@ const Scorecards = () => {
                             score: 5
                         }
                     }}
-                />
+                /> */}
             </div>
             <ResuableModal
                 show={modalShow}
