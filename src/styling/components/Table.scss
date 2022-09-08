@@ -1,13 +1,19 @@
 @import '../config.scss';
 
+// .table-container {
+//     box-shadow: $bs-xxl;
+//     border-radius: $br-lg;
+// }
+
 .table-container {
+    overflow: scroll;
+    max-width: 100%;
     box-shadow: $bs-xxl;
     border-radius: $br-lg;
 }
 
 table {
     border-spacing: 0;
-    overflow: hidden;
     width: 100%;
 
     thead {

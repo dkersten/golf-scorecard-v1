@@ -34,7 +34,7 @@ const Table = (props) => {
     }
 
     return(
-        <div className="table-container-outer">
+        <>
             <div className="table-container">
                 <table className={ classList(props.classList) }>
                     <thead>
@@ -66,7 +66,7 @@ const Table = (props) => {
                 :
                     null
             }
-        </div>
+        </>
     )
 }
 
