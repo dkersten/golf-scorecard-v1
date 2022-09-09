@@ -1,6 +1,9 @@
 // components
-import Button from 'react-bootstrap/Button'
+// import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
+
+// assets
+import { ReactComponent as CloseIcon } from '../Assets/Icons/close-icon.svg'
 
 const ResuableModal = (props) => {
   return (
@@ -17,8 +20,16 @@ const ResuableModal = (props) => {
         overflowY: 'auto'
         }}
       >
+        <div className="modal-head">
+            <button 
+                aria-label='Close Modal'
+                className='btn-close'
+                onClick={props.onHide}
+            >
+                <CloseIcon />
+            </button>
+        </div>
         {props.scorecard}
-        <Button onClick={props.onHide}>Close</Button>
       </Modal.Body>
     </Modal>
   )
