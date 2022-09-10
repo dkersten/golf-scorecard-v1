@@ -207,12 +207,16 @@ body.modal-open {
         background: $color-white;
         box-shadow: $bs-xxl;
         position: absolute;
-        top: 50px;
+        top: 25px;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1001;
         padding: $s-md3 0;
         border-radius: $br-xl;
+
+        .modal-body {
+            max-height: calc(100vh - (50px + $s-md3 + $s-md3));
+        }
     }
 
     .modal-content {
@@ -228,6 +232,7 @@ body.modal-open {
             background: rgba(0,0,0,0);
             border: none;
             padding: 0;
+            margin-right: $s-sm2;
 
             svg {
                 height: 22px;
