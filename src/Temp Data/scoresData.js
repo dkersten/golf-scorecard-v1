@@ -7,6 +7,84 @@ const scores = {
     scores: [
         {
             date: {
+                full: "9/9/22",
+                mobile: "9/9/22"
+            },
+            holesPlayed: 9,
+            score: 40,
+            course: "Brighton Park GC",
+            stats: true,
+            holeByHole: true,
+            advancedStats: true,
+            roundId: 46,
+            holes: {
+                1: {
+                    par: 4,
+                    score: 5,
+                    fir: "left",
+                    gir: false,
+                    putts: 2
+                },
+                2: {
+                    par: 3,
+                    score: 3,
+                    fir: null,
+                    gir: true,
+                    putts: 2
+                },
+                3: {
+                    par: 5,
+                    score: 4,
+                    fir: "right",
+                    gir: true,
+                    putts: 1
+                },
+                4: {
+                    par: 4,
+                    score: 5,
+                    fir: "left",
+                    gir: false,
+                    putts: 2
+                },
+                5: {
+                    par: 4,
+                    score: 4,
+                    fir: true,
+                    gir: true,
+                    putts: 2
+                },
+                6: {
+                    par: 5,
+                    score: 6,
+                    fir: true,
+                    gir: true,
+                    putts: 3
+                },
+                7: {
+                    par: 4,
+                    score: 5,
+                    fir: "left",
+                    gir: false,
+                    putts: 2
+                },
+                8: {
+                    par: 3,
+                    score: 3,
+                    fir: null,
+                    gir: true,
+                    putts: 2
+                },
+                9: {
+                    par: 4,
+                    score: 5,
+                    fir: "left",
+                    gir: false,
+                    putts: 1
+                }
+            }
+        },
+        {
+            date: {
                 full: "8/19/22",
                 mobile: "8/19/22"
             },
