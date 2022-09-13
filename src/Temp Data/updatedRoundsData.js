@@ -29,7 +29,7 @@ const rounds = {
                 },
                 course: "Sheridan",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 18
             },
             {
@@ -39,7 +39,7 @@ const rounds = {
                 },
                 course: "Sheridan",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 19
             },
             {
@@ -79,7 +79,7 @@ const rounds = {
                 },
                 course: "Brighton",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 23
             },
             {
@@ -119,7 +119,7 @@ const rounds = {
                 },
                 course: "Fossil Trace",
                 numHoles: 18,
-                stats: true,
+                stats: false,
                 roundId: 27
             },
             {
@@ -129,7 +129,7 @@ const rounds = {
                 },
                 course: "Brighton",
                 numHoles: 18,
-                stats: true,
+                stats: false,
                 roundId: 28
             },
             {
@@ -169,7 +169,7 @@ const rounds = {
                 },
                 course: "Sheridan",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 32
             },
             {
@@ -199,7 +199,7 @@ const rounds = {
                 },
                 course: "Brighton",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 35
             },
             {
@@ -209,7 +209,7 @@ const rounds = {
                 },
                 course: "Brighton",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 36
             },
             {
@@ -219,7 +219,7 @@ const rounds = {
                 },
                 course: "Brighton",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 37
             },
             {
@@ -249,7 +249,7 @@ const rounds = {
                 },
                 course: "Brighton",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 40
             },
             {
@@ -259,7 +259,7 @@ const rounds = {
                 },
                 course: "Sheridan",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 41
             },
             {
@@ -269,7 +269,7 @@ const rounds = {
                 },
                 course: "Churchville GC",
                 numHoles: 9,
-                stats: false,
+                stats: true,
                 roundId: 42
             },
             {
@@ -356,7 +356,7 @@ const rounds = {
                 },
                 course: "Brighton",
                 numHoles: 9,
-                stats: false,
+                stats: true,
                 roundId: 1
             },
             {
@@ -366,7 +366,7 @@ const rounds = {
                 },
                 course: "Sheridan",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 2
             },
             {
@@ -386,7 +386,7 @@ const rounds = {
                 },
                 course: "Terry Hills GC",
                 numHoles: 18,
-                stats: true,
+                stats: false,
                 roundId: 4
             },
             {
@@ -396,7 +396,7 @@ const rounds = {
                 },
                 course: "Audobahn Par 3 GC",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 5
             },
             {
@@ -436,7 +436,7 @@ const rounds = {
                 },
                 course: "Brighton",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 9
             },
             {
@@ -446,7 +446,7 @@ const rounds = {
                 },
                 course: "Brighton",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 10
             },
             {
@@ -466,7 +466,7 @@ const rounds = {
                 },
                 course: "Brighton",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 12
             },
             {
@@ -496,7 +496,7 @@ const rounds = {
                 },
                 course: "Sheridan",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 15
             },
             {
@@ -533,7 +533,7 @@ const rounds = {
         ],
         graphDataHoles: [
             {name: '2021', holes: 198},
-            {name: '2022', holes: 324}
+            {name: '2022', holes: 333}
         ],
         rounds: [
             {
@@ -543,7 +543,7 @@ const rounds = {
                 },
                 course: "Brighton",
                 numHoles: 9,
-                stats: false,
+                stats: true,
                 roundId: 1
             },
             {
@@ -553,7 +553,7 @@ const rounds = {
                 },
                 course: "Sheridan",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 2
             },
             {
@@ -573,7 +573,7 @@ const rounds = {
                 },
                 course: "Terry Hills GC",
                 numHoles: 18,
-                stats: true,
+                stats: false,
                 roundId: 4
             },
             {
@@ -583,7 +583,7 @@ const rounds = {
                 },
                 course: "Audobahn Par 3 GC",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 5
             },
             {
@@ -623,7 +623,7 @@ const rounds = {
                 },
                 course: "Brighton",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 9
             },
             {
@@ -633,7 +633,7 @@ const rounds = {
                 },
                 course: "Brighton",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 10
             },
             {
@@ -653,7 +653,7 @@ const rounds = {
                 },
                 course: "Brighton",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 12
             },
             {
@@ -683,7 +683,7 @@ const rounds = {
                 },
                 course: "Sheridan",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 15
             },
             {
@@ -713,7 +713,7 @@ const rounds = {
                 },
                 course: "Sheridan",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 18
             },
             {
@@ -723,7 +723,7 @@ const rounds = {
                 },
                 course: "Sheridan",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 19
             },
             {
@@ -763,7 +763,7 @@ const rounds = {
                 },
                 course: "Brighton",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 23
             },
             {
@@ -803,7 +803,7 @@ const rounds = {
                 },
                 course: "Fossil Trace",
                 numHoles: 18,
-                stats: true,
+                stats: false,
                 roundId: 27
             },
             {
@@ -813,7 +813,7 @@ const rounds = {
                 },
                 course: "Brighton",
                 numHoles: 18,
-                stats: true,
+                stats: false,
                 roundId: 28
             },
             {
@@ -853,7 +853,7 @@ const rounds = {
                 },
                 course: "Sheridan",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 32
             },
             {
@@ -883,7 +883,7 @@ const rounds = {
                 },
                 course: "Brighton",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 35
             },
             {
@@ -893,7 +893,7 @@ const rounds = {
                 },
                 course: "Brighton",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 36
             },
             {
@@ -903,7 +903,7 @@ const rounds = {
                 },
                 course: "Brighton",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 37
             },
             {
@@ -933,7 +933,7 @@ const rounds = {
                 },
                 course: "Brighton",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 40
             },
             {
@@ -943,7 +943,7 @@ const rounds = {
                 },
                 course: "Sheridan",
                 numHoles: 9,
-                stats: true,
+                stats: false,
                 roundId: 41
             },
             {
@@ -953,7 +953,7 @@ const rounds = {
                 },
                 course: "Churchville GC",
                 numHoles: 9,
-                stats: false,
+                stats: true,
                 roundId: 42
             },
             {
