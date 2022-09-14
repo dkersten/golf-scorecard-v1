@@ -16,7 +16,6 @@ const ResuableModal = (props) => {
       <Modal.Body
         scrollable={true}
         style={{
-        // maxHeight: '500px',
         overflowY: 'auto'
         }}
       >

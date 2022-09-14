@@ -1,4 +1,4 @@
-import renderIcon from "./TableIconLink"
+import RenderIcon from "./TableIconLink"
 
 const renderBodyRows = (data, icon, isMobile, i, bodyRows, hideIndex) => {
     const rowTDs = []
@@ -24,7 +24,8 @@ const renderBodyRows = (data, icon, isMobile, i, bodyRows, hideIndex) => {
                 rowTDs.push(<td key={key}>{ data[i][key] }</td>)
             } else if (typeof data[i][key] === 'boolean') {
                 if (data[i][key] === true) {
-                    rowTDs.push(<td data-id={data[i].roundId}  key={key}>{ renderIcon(icon) }</td>) 
+                    const roundId = data[i].roundId
+                    rowTDs.push(<td data-id={data[i].roundId}  key={key}>{ <RenderIcon icon={icon} roundId={roundId} /> }</td>) 
                 } else {
                     rowTDs.push(<td data-id={data[i].roundId} key={key}>{ null }</td>)
                 }
