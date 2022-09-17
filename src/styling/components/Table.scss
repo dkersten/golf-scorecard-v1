@@ -50,11 +50,23 @@ table {
         padding: $s-md1 $s-md2;
     }
 
-    td svg {
-        fill: $color-primary;
-        height: 22px;
-        width: auto;
-        margin-bottom: -6px;
+    td {
+        button {
+            padding: 0;
+            line-height: 1;
+            background: rgba(0,0,0,0);
+            border: none;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        svg {
+            fill: $color-primary;
+            height: 22px;
+            width: auto;
+            margin-bottom: -6px;
+        }
     }
 
     @media only screen and (max-width: 767px) {

@@ -14,20 +14,22 @@ const RenderIcon = (props) => {
     
     const [modalShow, setModalShow] = useState(false)
 
-    const launchScorecardModal = () => {
-        // alert("testing")
-        setModalShow(true)
+    const launchScorecardModal = (roundId) => {
+        // alert(roundId)
+        const scores = scorecards.scores
+        console.log(scores)
+        // setModalShow(true)
     }
 
     const displayIcon = (iconInfo, roundId) => {
         if (iconInfo.icon && iconInfo.link) {
             // return(<Link to={iconInfo.link}>{iconInfo.icon}</Link>)
-            return(<button onClick={launchScorecardModal}>{iconInfo.icon}</button>)
+            return(<button onClick={() => launchScorecardModal(roundId)}>{iconInfo.icon}</button>)
         } else if (iconInfo.icon) {
             return iconInfo.icon
         } else if (iconInfo.link) {
                 // return <Link to={iconInfo.link}><DefaultIcon /></Link>
-                return <button onClick={launchScorecardModal}><DefaultIcon /></button>
+                return <button onClick={() => launchScorecardModal(roundId)}><DefaultIcon /></button>
         } else {
                 return <DefaultIcon />
         }
