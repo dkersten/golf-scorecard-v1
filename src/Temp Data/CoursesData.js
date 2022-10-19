@@ -1,5 +1,5 @@
 const courses = {
-    totalPlayed: 15,
+    totalPlayed: 16,
     statesPlayed: 4,
     countriesPlayed: 1,
     courses: [
@@ -104,6 +104,13 @@ const courses = {
         {
             name: "Crag Burn",
             city: "East Aurora",
+            state: "NY",
+            country: "USA",
+            year: "2022"
+        },
+        {
+            name: "Ravenwood GC",
+            city: "Victor",
             state: "NY",
             country: "USA",
             year: "2022"

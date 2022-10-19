@@ -2,16 +2,17 @@ const rounds = {
     2022: {
         displayName: "2022",
         selectValue: "2022",
-        roundsPlayed: 30,
-        holesPlayed: 333,
-        coursesPlayed: 6,
+        roundsPlayed: 35,
+        holesPlayed: 387,
+        coursesPlayed: 7,
         graphDataRounds: [
             {name: 'Apr', rounds: 2},
             {name: 'May', rounds: 4},
             {name: 'Jun', rounds: 5},
             {name: 'Jul', rounds: 9},
             {name: 'Aug', rounds: 7},
-            {name: 'Sep', rounds: 3}
+            {name: 'Sep', rounds: 5},
+            {name: 'Oct', rounds: 3}
         ],
         graphDataHoles: [
             {name: 'Apr', holes: 18},
@@ -19,7 +20,8 @@ const rounds = {
             {name: 'Jun', holes: 72},
             {name: 'Jul', holes: 99},
             {name: 'Aug', holes: 72},
-            {name: 'Sep', holes: 27}
+            {name: 'Sep', holes: 45},
+            {name: 'Oct', holes: 36}
         ],
         rounds: [
             {
@@ -321,6 +323,56 @@ const rounds = {
                 numHoles: 9,
                 stats: false,
                 roundId: 47
+            },
+            {
+                date: {
+                    full: "September 16",
+                    mobile: "9/16"
+                },
+                course: "Brighton GC",
+                numHoles: 9,
+                stats: false,
+                roundId: 48
+            },
+            {
+                date: {
+                    full: "September 17",
+                    mobile: "9/17"
+                },
+                course: "Brighton GC",
+                numHoles: 9,
+                stats: false,
+                roundId: 49
+            },
+            {
+                date: {
+                    full: "October 2",
+                    mobile: "10/2"
+                },
+                course: "Brighton GC",
+                numHoles: 9,
+                stats: false,
+                roundId: 50
+            },
+            {
+                date: {
+                    full: "October 8",
+                    mobile: "10/8"
+                },
+                course: "Brighton GC",
+                numHoles: 18,
+                stats: false,
+                roundId: 51
+            },
+            {
+                date: {
+                    full: "October 11",
+                    mobile: "10/11"
+                },
+                course: "Ravenwood GC",
+                numHoles: 9,
+                stats: false,
+                roundId: 52
             }
         ]
     },
@@ -524,16 +576,16 @@ const rounds = {
     alltime: {
         displayName: "All Time",
         selectValue: "alltime",
-        roundsPlayed: 47,
-        holesPlayed: 531,
-        coursesPlayed: 8,
+        roundsPlayed: 52,
+        holesPlayed: 585,
+        coursesPlayed: 11,
         graphDataRounds: [
             {name: '2021', rounds: 17},
-            {name: '2022', rounds: 30}
+            {name: '2022', rounds: 35}
         ],
         graphDataHoles: [
             {name: '2021', holes: 198},
-            {name: '2022', holes: 333}
+            {name: '2022', holes: 387}
         ],
         rounds: [
             {
@@ -1005,6 +1057,56 @@ const rounds = {
                 numHoles: 9,
                 stats: false,
                 roundId: 47
+            },
+            {
+                date: {
+                    full: "September 16",
+                    mobile: "9/16"
+                },
+                course: "Brighton GC",
+                numHoles: 9,
+                stats: false,
+                roundId: 48
+            },
+            {
+                date: {
+                    full: "September 17",
+                    mobile: "9/17"
+                },
+                course: "Brighton GC",
+                numHoles: 9,
+                stats: false,
+                roundId: 49
+            },
+            {
+                date: {
+                    full: "October 2",
+                    mobile: "10/2"
+                },
+                course: "Brighton GC",
+                numHoles: 9,
+                stats: false,
+                roundId: 50
+            },
+            {
+                date: {
+                    full: "October 8",
+                    mobile: "10/8"
+                },
+                course: "Brighton GC",
+                numHoles: 18,
+                stats: false,
+                roundId: 51
+            },
+            {
+                date: {
+                    full: "October 11",
+                    mobile: "10/11"
+                },
+                course: "Ravenwood GC",
+                numHoles: 9,
+                stats: false,
+                roundId: 52
             }
         ]
     },
