@@ -16,4 +16,12 @@
             }
         }
     }
+
+    .location, .date {
+        svg {
+            height: $font-reg;
+            fill: $color-primary-l6;
+            margin-right: $s-sm3;
+        }
+    }
 }

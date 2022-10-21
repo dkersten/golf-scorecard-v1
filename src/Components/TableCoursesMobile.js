@@ -1,13 +1,9 @@
+// assets
+import { ReactComponent as LocationIcon } from '../Assets/Icons/location-solid-icon.svg'
+import { ReactComponent as DateIcon } from '../Assets/Icons/calendar-solid-icon.svg'
+
 const TableCoursesMobile = (props) => {
-    console.log(props.bodyData)
     return(
-        // <div className="mobile-course-card">
-        //     Index: props.bodyData.name
-        //     <br />
-        //     Location: props.bodyData.city, props.bodyData.state, props.bodyData.country
-        //     <br />
-        //     Date: props.bodyData.year
-        // </div>
         <div className="card-container">
             <h2>Courses</h2>
             {
@@ -18,10 +14,10 @@ const TableCoursesMobile = (props) => {
                         </div>
                         <div className="details-container">
                             <div className="location">
-
+                                <LocationIcon /> {course.city} {course.state}, {course.country}
                             </div>
                             <div className="date">
-                                
+                                <DateIcon /> {course.year}
                             </div>
                         </div>
                     </div>
