@@ -4,6 +4,7 @@ import Dashboard from './Pages/Dashboard'
 import Rounds from './Pages/Rounds'
 import Yardages from './Pages/Yardages'
 import Courses from './Pages/Courses'
+import CoursesUpdated from './Pages/CoursesUpdated'
 import Goals from './Pages/Goals'
 import Milestones from './Pages/Milestones'
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/rounds" element={<Rounds />} />
           <Route path="/yardages" element={<Yardages />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/courses-updated" element={<CoursesUpdated />} />
           <Route path="/goals" element={<Goals />} />
           <Route path="/milestones" element={<Milestones />} />
           <Route path="/scorecards" element={<Scorecards />} />

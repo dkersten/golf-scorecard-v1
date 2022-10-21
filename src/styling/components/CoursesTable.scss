@@ -1,0 +1,19 @@
+@import "../config.scss";
+
+@media only screen and (max-width: 549px) {
+    table.courses-table-updated {
+
+        thead {
+            display: none;
+        }
+    
+        tbody {
+            display: flex;
+            flex-direction: column;
+    
+            tr {
+                margin-bottom: $s-md1;
+            }
+        }
+    }
+}
