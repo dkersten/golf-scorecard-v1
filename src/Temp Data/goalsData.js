@@ -17,7 +17,7 @@ const goals = {
                 description: "Play 35 rounds",
                 completed: true,
                 progress: {
-                    current: 35,
+                    current: 37,
                     total: 35
                 }
             },
@@ -26,7 +26,7 @@ const goals = {
                 description: "Play 3 new courses",
                 completed: true,
                 progress: {
-                    current: 5,
+                    current: 7,
                     total: 3
                 }
             },

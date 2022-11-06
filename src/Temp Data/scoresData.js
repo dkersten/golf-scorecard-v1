@@ -3,8 +3,59 @@
 // optionally include: hole by hole score, advanced stats (FiR, GiR, putts)
 
 const scores = {
-    totalScoresInput: 3,
+    totalScoresInput: 5,
     scores: [
+        {
+            date: {
+                full: "11/4/22",
+                mobile: "11/4/22"
+            },
+            holesPlayed: 9,
+            score: 45,
+            course: "Brighton Park GC",
+            stats: true,
+            holeByHole: true,
+            advancedStats: false,
+            roundId: 54,
+            holes: {
+                1: {
+                    par: 4,
+                    score: 5
+                },
+                2: {
+                    par: 3,
+                    score: 4
+                },
+                3: {
+                    par: 5,
+                    score: 6
+                },
+                4: {
+                    par: 4,
+                    score: 5
+                },
+                5: {
+                    par: 4,
+                    score: 5
+                },
+                6: {
+                    par: 5,
+                    score: 5
+                },
+                7: {
+                    par: 4,
+                    score: 5
+                },
+                8: {
+                    par: 3,
+                    score: 4
+                },
+                9: {
+                    par: 4,
+                    score: 5
+                }
+            }
+        },
         {
             date: {
                 full: "9/9/22",

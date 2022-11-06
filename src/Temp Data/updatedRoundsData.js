@@ -2,8 +2,8 @@ const rounds = {
     2022: {
         displayName: "2022",
         selectValue: "2022",
-        roundsPlayed: 35,
-        holesPlayed: 387,
+        roundsPlayed: 37,
+        holesPlayed: 414,
         coursesPlayed: 7,
         graphDataRounds: [
             {name: 'Apr', rounds: 2},
@@ -12,7 +12,8 @@ const rounds = {
             {name: 'Jul', rounds: 9},
             {name: 'Aug', rounds: 7},
             {name: 'Sep', rounds: 5},
-            {name: 'Oct', rounds: 3}
+            {name: 'Oct', rounds: 4},
+            {name: 'Nov', rounds: 1}
         ],
         graphDataHoles: [
             {name: 'Apr', holes: 18},
@@ -21,7 +22,8 @@ const rounds = {
             {name: 'Jul', holes: 99},
             {name: 'Aug', holes: 72},
             {name: 'Sep', holes: 45},
-            {name: 'Oct', holes: 36}
+            {name: 'Oct', holes: 54},
+            {name: 'Nov', holes: 9}
         ],
         rounds: [
             {
@@ -373,6 +375,26 @@ const rounds = {
                 numHoles: 9,
                 stats: false,
                 roundId: 52
+            },
+            {
+                date: {
+                    full: "October 23",
+                    mobile: "10/23"
+                },
+                course: "Brighton GC",
+                numHoles: 18,
+                stats: false,
+                roundId: 53
+            },
+            {
+                date: {
+                    full: "November 4",
+                    mobile: "11/4"
+                },
+                course: "Brighton GC",
+                numHoles: 9,
+                stats: true,
+                roundId: 54
             }
         ]
     },
@@ -576,16 +598,16 @@ const rounds = {
     alltime: {
         displayName: "All Time",
         selectValue: "alltime",
-        roundsPlayed: 52,
-        holesPlayed: 585,
+        roundsPlayed: 54,
+        holesPlayed: 612,
         coursesPlayed: 11,
         graphDataRounds: [
             {name: '2021', rounds: 17},
-            {name: '2022', rounds: 35}
+            {name: '2022', rounds: 37}
         ],
         graphDataHoles: [
             {name: '2021', holes: 198},
-            {name: '2022', holes: 387}
+            {name: '2022', holes: 414}
         ],
         rounds: [
             {
@@ -1107,6 +1129,26 @@ const rounds = {
                 numHoles: 9,
                 stats: false,
                 roundId: 52
+            },
+            {
+                date: {
+                    full: "October 23",
+                    mobile: "10/23"
+                },
+                course: "Brighton GC",
+                numHoles: 18,
+                stats: false,
+                roundId: 53
+            },
+            {
+                date: {
+                    full: "November 4",
+                    mobile: "11/4"
+                },
+                course: "Brighton GC",
+                numHoles: 9,
+                stats: true,
+                roundId: 54
             }
         ]
     },
