@@ -29,6 +29,7 @@ const ResuableModal = (props) => {
             </button>
         </div>
         {props.scorecard}
+        {/* Hello from Modal */}
       </Modal.Body>
     </Modal>
   )
