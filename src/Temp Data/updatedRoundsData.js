@@ -2,8 +2,8 @@ const rounds = {
     2022: {
         displayName: "2022",
         selectValue: "2022",
-        roundsPlayed: 37,
-        holesPlayed: 414,
+        roundsPlayed: 38,
+        holesPlayed: 423,
         coursesPlayed: 7,
         graphDataRounds: [
             {name: 'Apr', rounds: 2},
@@ -13,7 +13,7 @@ const rounds = {
             {name: 'Aug', rounds: 7},
             {name: 'Sep', rounds: 5},
             {name: 'Oct', rounds: 4},
-            {name: 'Nov', rounds: 1}
+            {name: 'Nov', rounds: 2}
         ],
         graphDataHoles: [
             {name: 'Apr', holes: 18},
@@ -23,7 +23,7 @@ const rounds = {
             {name: 'Aug', holes: 72},
             {name: 'Sep', holes: 45},
             {name: 'Oct', holes: 54},
-            {name: 'Nov', holes: 9}
+            {name: 'Nov', holes: 18}
         ],
         rounds: [
             {
@@ -395,6 +395,16 @@ const rounds = {
                 numHoles: 9,
                 stats: true,
                 roundId: 54
+            },
+            {
+                date: {
+                    full: "November 7",
+                    mobile: "11/7"
+                },
+                course: "Sheridan GC",
+                numHoles: 9,
+                stats: false,
+                roundId: 55
             }
         ]
     },
@@ -598,16 +608,16 @@ const rounds = {
     alltime: {
         displayName: "All Time",
         selectValue: "alltime",
-        roundsPlayed: 54,
-        holesPlayed: 612,
+        roundsPlayed: 55,
+        holesPlayed: 621,
         coursesPlayed: 11,
         graphDataRounds: [
             {name: '2021', rounds: 17},
-            {name: '2022', rounds: 37}
+            {name: '2022', rounds: 38}
         ],
         graphDataHoles: [
             {name: '2021', holes: 198},
-            {name: '2022', holes: 414}
+            {name: '2022', holes: 423}
         ],
         rounds: [
             {
@@ -1149,6 +1159,16 @@ const rounds = {
                 numHoles: 9,
                 stats: true,
                 roundId: 54
+            },
+            {
+                date: {
+                    full: "November 7",
+                    mobile: "11/7"
+                },
+                course: "Sheridan GC",
+                numHoles: 9,
+                stats: false,
+                roundId: 55
             }
         ]
     },
