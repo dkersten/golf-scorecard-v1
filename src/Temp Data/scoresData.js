@@ -11,7 +11,7 @@ const scores = {
                 mobile: "11/4/22"
             },
             holesPlayed: 9,
-            score: 45,
+            score: 44,
             course: "Brighton Park GC",
             stats: true,
             holeByHole: true,

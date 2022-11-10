@@ -107,7 +107,7 @@ const Rounds = () => {
                 onHide={() => setModalShow(false)}
                 title="Scorecard"
                 type="scorecard"
-                scorecardId={1}
+                scorecardId={54}
             />
         </Layout>
     )
