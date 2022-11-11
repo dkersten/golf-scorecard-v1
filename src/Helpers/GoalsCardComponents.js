@@ -22,7 +22,7 @@ const completionProgressNumsComponent = (current, total) => {
     if (current >= total) {
         return(
             <span className="completion-count">
-                {total}/{total}
+                {current}/{total}
             </span>
         )
     } else {
