@@ -14,6 +14,30 @@ import { ReactComponent as StatsIcon } from '../Assets/Icons/mixed-char-icon.svg
 
 const Scorecards = () => {
 
+    const calculateBestScores = (numHoles, duration) => {
+        let numRounds
+        let scoresArr = []
+
+        if (duration === "all") {
+            numRounds = scores.scores.length
+        } else {
+            numRounds = duration
+        }
+
+        let rounds = scores.scores.filter(score => score.holesPlayed === numHoles)
+
+        for (let i = 0; i < rounds.length; i++) {
+            scoresArr.push(rounds[i])
+        }
+
+        scoresArr = scoresArr.slice(0, numRounds)
+
+        const bestRoundObj = scoresArr.sort((a, b) => a.score > b.score ? 1 : -1)
+        const bestScore = bestRoundObj[0].score
+
+        return bestScore
+    }
+
     return(
         <Layout>
             <div className="overview-section">
@@ -23,17 +47,17 @@ const Scorecards = () => {
                         <CardOverview 
                             icon={<GolfClubIcon />}
                             headline="Last 5 Played"
-                            data={39}
+                            data={calculateBestScores(9, 5)}
                         />
                         <CardOverview 
                             icon={<GolfballTeeIcon />} 
                             headline="Last 10 Played"
-                            data={39}
+                            data={calculateBestScores(9, 10)}
                         />
                         <CardOverview 
                             icon={<GolfHoleIcon />} 
                             headline="All Time"
-                            data={37}
+                            data={calculateBestScores(9, "all")}
                         />
                     </ul>
                 </div>
@@ -45,17 +69,17 @@ const Scorecards = () => {
                         <CardOverview 
                             icon={<GolfClubIcon />}
                             headline="Last 5 Played"
-                            data={82}
+                            data={calculateBestScores(18, 5)}
                         />
                         <CardOverview 
                             icon={<GolfballTeeIcon />} 
                             headline="Last 10 Played"
-                            data={81}
+                            data={calculateBestScores(18, 10)}
                         />
                         <CardOverview 
                             icon={<GolfHoleIcon />} 
                             headline="All Time"
-                            data={80}
+                            data={calculateBestScores(18, "all")}
                         />
                     </ul>
                 </div>
