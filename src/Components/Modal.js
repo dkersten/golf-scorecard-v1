@@ -6,6 +6,7 @@ import { ReactComponent as CloseIcon } from '../Assets/Icons/close-icon.svg'
 
 // data
 import scores from '../Temp Data/scoresData'
+import CourseForm from './CourseForm'
 import Scorecard from './Scorecard'
 
 const ResuableModal = (props) => {
@@ -25,6 +26,12 @@ const ResuableModal = (props) => {
         advancedStats={scoreObj.advancedStats}
         holes={scoreObj.holes}
       />
+    )
+  }
+
+  const renderCourseForm = () => {
+    return(
+      <CourseForm />
     )
   }
   
@@ -51,6 +58,7 @@ const ResuableModal = (props) => {
             </button>
         </div>
         { props.type === "scorecard" ? renderScorecard() : null}
+        { props.type === "course form" ?  renderCourseForm() : null }
       </Modal.Body>
     </Modal>
   )

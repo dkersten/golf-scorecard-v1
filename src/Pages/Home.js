@@ -1,15 +1,32 @@
 // components
 import Layout from "../Layout"
 import BtnSecondary from "../Components/BtnSecondary"
-// import ArrowRightIcon from "../../src/Assets/Icons/arrow-right-light-icon.svg"
-import { ReactComponent as PlusIconLight } from '../../src/Assets/Icons/plus-icon-light.svg'
+import { ReactComponent as PlusIconLight } from "../../src/Assets/Icons/plus-icon-light.svg"
+import Modal from "../Components/Modal"
+import Button from "react-bootstrap/Button"
+import CourseForm from "../Components/CourseForm"
+
+// libraries/helpers
+import { useState } from "react"
 
 // styling
 import '../styling/Home.scss'
 
 const Home = () => {
+
+    const [modalShow, setModalShow] = useState(false)
+    // const [formTitle, setFormTitle] = useState(null)
+    // const [formType, setFormType] = useState(null)
+
     return(
         <Layout>
+            {/* remove later after testing */}
+            <div style={{ marginBottom: '4rem'}}>
+            <Button variant="primary" onClick={() => setModalShow(true)}>
+                Open Modal
+            </Button>
+            </div>
+
             <h1>
                 Add a new...
             </h1>
@@ -35,6 +52,13 @@ const Home = () => {
                     icon={<PlusIconLight />}
                 />
             </div>
+            <Modal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+                title="Add a course"
+                type="course form"
+            />
+            <CourseForm />
         </Layout>
     )
 }
