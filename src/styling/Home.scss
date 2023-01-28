@@ -1,2 +1,12 @@
 @import './config.scss';
 
+.forms-button-container {
+    margin-top: $s-lg1;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: $s-sm3;
+
+    button {
+        margin-right: $s-md1;
+    }
+}
