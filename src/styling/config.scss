@@ -101,6 +101,7 @@ $font-xxl: 2.5rem;
 
     &:hover {
         background: linear-gradient(to left, $color-primary, $color-primary);
+        cursor: pointer;
 
         .btn-icon svg {
             margin-left: 1.25rem;
@@ -172,6 +173,10 @@ $font-xxl: 2.5rem;
 
 .btn-primary {
     @include btnPrimary;
+
+    &[type="submit"] {
+        color: $color-offwhite1;
+    }
 }
 
 .btn-secondary {
