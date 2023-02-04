@@ -20,21 +20,22 @@ const Home = () => {
 
     return(
         <Layout>
-            {/* remove later after testing */}
-            <div style={{ marginBottom: '4rem'}}>
-            <Button variant="primary" onClick={() => setModalShow(true)}>
-                Open Modal
-            </Button>
-            </div>
-
             <h1>
                 Add a new...
             </h1>
             <div className="forms-button-container">
-                <BtnSecondary
-                    text="Round"
-                    icon={<PlusIconLight />}
-                />
+                
+                <Button
+                    variant="primary"
+                    onClick={() => setModalShow(true)}
+                    className="no-style"
+                >
+                    <BtnSecondary
+                        text="Round"
+                        icon={<PlusIconLight />}
+                        onClick={() => setModalShow(true)}
+                    />
+                </Button>
                 <BtnSecondary
                     text="Course Played"
                     icon={<PlusIconLight />}
@@ -58,7 +59,6 @@ const Home = () => {
                 title="Add a course"
                 type="course form"
             />
-            <CourseForm />
         </Layout>
     )
 }

@@ -28,6 +28,9 @@ const CourseForm = () => {
                 postFormData()
             }}
         >
+            <div className="title-container">
+                <h2>Add a Course</h2>
+            </div>
             <div className="input-container flex-container">
                 <label
                     htmlFor="name"

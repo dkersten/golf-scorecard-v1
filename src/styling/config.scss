@@ -32,6 +32,9 @@ $color-offwhite4: #516272;
 // font colors:
 $color-font-light-theme: #56595D;
 
+// misc colors:
+$color-gray1: #c6caccd9;
+
 // status colors
 $color-danger: #DE3142;
 $color-success: #1A8754;
@@ -111,6 +114,14 @@ $font-xxl: 2.5rem;
     }
 }
 
+@mixin btnNoStyle {
+    background: rgba(0,0,0,0);
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+
 /////// common styling
 *:not(i) {
     font-family: 'Source Sans Pro', sans-serif;
@@ -176,6 +187,10 @@ $font-xxl: 2.5rem;
 
     &[type="submit"] {
         color: $color-offwhite1;
+    }
+
+    &.no-style {
+        @include btnNoStyle;
     }
 }
 

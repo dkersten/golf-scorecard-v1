@@ -1,6 +1,16 @@
 @import '../config.scss';
 
 .courses-form {
+
+    .title-container {
+        margin-bottom: $s-md3;
+        margin-left: $s-sm4;
+
+        h2 {
+            font-weight: 700;
+        }
+    }
+
     .input-container {
         margin-bottom: $s-lg1;
 
@@ -8,16 +18,20 @@
             display: flex;
             flex-wrap: wrap;
             row-gap: $s-md3;
+
+            @media only screen and (max-width: 949px) {
+                row-gap: $s-sm2;
+            }
     
             .flex-item {
                 flex-basis: calc(50% - ($s-sm4 * 2));
                 margin: 0 $s-sm4;
     
-                @media only screen and (max-width: 849px) {
+                @media only screen and (max-width: 949px) {
                     flex-basis: 100%;
     
                     &:not(:last-of-type) {
-                        margin-bottom: $s-md3;
+                        margin-bottom: $s-sm1;
                     }
                 }
             }
@@ -32,6 +46,9 @@
 
                 input {
                     flex-basis: 100%;
+                    border: 1px solid $color-gray1;
+                    border-radius: $br-md;
+                    padding: $s-sm1 $s-sm2;
                 }
             }
         }
