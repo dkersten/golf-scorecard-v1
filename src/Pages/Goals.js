@@ -12,7 +12,8 @@ import { useState } from "react"
 const Goals = () => {
 
     let currentYear = new Date().getFullYear()
-    currentYear = currentYear.toString()
+    // currentYear = currentYear.toString()
+    currentYear = "2022"
     const [yearChoice, setYearChoice] = useState(currentYear)
 
     const SelectOptions = (goals) => {

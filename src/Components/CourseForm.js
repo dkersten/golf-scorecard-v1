@@ -12,7 +12,17 @@ const CourseForm = () => {
     const [country, setCountry] = useState("")
     const [year, setYear] = useState("")
 
-    const postFormData = () => {
+    const postFormData = (e) => {
+        const courseObj = {
+            courseName: name,
+            courseCity: city,
+            courseState: state,
+            courseCountry: country,
+            courseYear: year
+        }
+
+        // post form data
+        
         setName("")
         setCity("")
         setState("")
@@ -25,7 +35,8 @@ const CourseForm = () => {
             className="form modal-form courses-form"
             onSubmit={(e) => {
                 e.preventDefault()
-                postFormData()
+                console.log("hola")
+                postFormData(e)
             }}
         >
             <div className="title-container">
