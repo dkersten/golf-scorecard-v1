@@ -1,0 +1,19 @@
+@import '../../styling/config.scss';
+
+.line-graph {
+
+    .recharts-wrapper {
+        margin: auto;
+    }
+
+    .recharts-surface {
+        margin-left: -25px;
+    }
+}
+
+.line-graph__heading {
+    text-align: center;
+    margin-bottom: $s-sm3;
+    font-size: $font-md;
+    letter-spacing: -.25px;
+}

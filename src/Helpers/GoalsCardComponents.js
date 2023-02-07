@@ -6,13 +6,17 @@ const iconComponent = (completed) => {
     if (completed) {
         return(
             <div className="flex-icon completed">
-                <GoalCompletedIcon />
+                <GoalCompletedIcon
+                    className='goal-card__icon goal-card__icon--isCompleted'
+                />
             </div>
         )
     } else {
         return(
             <div className="flex-icon incomplete">
-                <GoalInProgressIcon />
+                <GoalInProgressIcon 
+                    className='goal-card__icon goal-card__icon--isNotCompleted'
+                />
             </div>
         )
     }
@@ -21,13 +25,13 @@ const iconComponent = (completed) => {
 const completionProgressNumsComponent = (current, total) => {
     if (current >= total) {
         return(
-            <span className="completion-count">
+            <span className="goal-card__completion-count">
                 {current}/{total}
             </span>
         )
     } else {
         return(
-            <span className="completion-count">
+            <span className="goal-card__completion-count">
                 {current}/{total}
             </span>
         )
@@ -45,11 +49,11 @@ const completionProgressBarComponent = (current, total) => {
     }
 
     return(
-        <div className="progress-bar-container">
-            <div className="progress-bar-bg"></div>
+        <div className="goal-card__progress-bar-container">
+            <div className="goal-card__progress-bar-bg"></div>
             <div
                 style={{ width: `${completedPercentage}%` }}
-                className="progress-bar"
+                className="goal-card__progress-bar"
             >
             </div>
         </div>

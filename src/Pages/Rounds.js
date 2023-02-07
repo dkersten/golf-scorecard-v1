@@ -3,7 +3,7 @@ import Layout from "../Layout"
 import CardOverview from "../Components/CardOverview"
 import Table from "../Components/Table"
 import SelectWithState from "../Components/SelectWithState"
-import LineGraph from "../Components/LineGraph"
+import LineGraph from "../Components/LineGraph/LineGraph"
 import Modal from "../Components/Modal"
 import Button from 'react-bootstrap/Button'
 

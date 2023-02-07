@@ -24,14 +24,14 @@ const CardAchievement = (props) => {
     }
 
     return(
-        <li className="card-goal">
+        <li className="goal-card">
             <div className={renderCardContentClasses()}>
                 <div className="flex-container">
                     { iconComponent(goalCompleted) }
-                    <div className="flex-info">
-                        <h2>{ goalDescription }</h2>
+                    <div className="flex-info goal-card__info">
+                        <h2 className="goal-card__description">{ goalDescription }</h2>
                     </div>
-                    <div className="flex-progress-container">
+                    <div className="goal-card__progress-container flex-progress-container">
                         { completionProgressNumsComponent(goalProgress.current, goalProgress.total) }
                         { completionProgressBarComponent(goalProgress.current, goalProgress.total) }
                     </div>

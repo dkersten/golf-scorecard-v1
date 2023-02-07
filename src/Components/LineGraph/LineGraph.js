@@ -2,12 +2,12 @@
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts'
 
 // styling
-import '../styling/components/LineGraph.scss'
+import './LineGraph.scss'
 
 const LineGraph = (props) => {
     return(
-        <div className='line-graph-container'>
-                <h2>{props.graphCaption}</h2>
+        <div className='line-graph'>
+                <h2 className='line-graph__heading'>{props.graphCaption}</h2>
                 <LineChart
                     height={200}
                     width={350}
