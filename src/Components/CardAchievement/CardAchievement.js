@@ -1,8 +1,8 @@
 // libraries/helpers
-import { iconComponent, completionProgressNumsComponent, completionProgressBarComponent } from '../Helpers/GoalsCardComponents'
+import { iconComponent, completionProgressNumsComponent, completionProgressBarComponent } from '../../Helpers/GoalsCardComponents'
 
 // styling
-import '../styling/components/CardAchievement.scss'
+import './CardAchievement.scss'
 
 const CardAchievement = (props) => {
     let {

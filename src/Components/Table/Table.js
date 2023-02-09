@@ -1,15 +1,15 @@
 // components
-import { ReactComponent as ArrowRightIcon } from '../Assets/Icons/arrow-right-icon.svg'
-import BtnPrimary from './BtnPrimary'
+import { ReactComponent as ArrowRightIcon } from '../../Assets/Icons/arrow-right-icon.svg'
+import BtnPrimary from '../BtnPrimary'
 
 // libraries/helpers
-import renderHeaderData from '../Helpers/RenderTableHeaderData'
-import { renderInitialBodyData, renderAllBodyData } from '../Helpers/RenderTableBodyData'
-import classList from '../Helpers/ClassesFromArray'
+import renderHeaderData from '../../Helpers/RenderTableHeaderData'
+import { renderInitialBodyData, renderAllBodyData} from '../../Helpers/RenderTableBodyData'
+import classList from '../../Helpers/ClassesFromArray'
 import { useState, useEffect } from 'react'
 
 // styling
-import '../styling/components/Table.scss'
+import './Table.scss'
 
 const Table = (props) => {
 
@@ -37,12 +37,12 @@ const Table = (props) => {
         <>
             <div className="table-container">
                 <table className={ classList(props.classList) }>
-                    <thead>
+                    <thead className='table__head'>
                         <tr>
                         { renderHeaderData(props.headerColumns, props.hideIndex) }
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className='table__body'>
                         {
                             requestAdditionalData
                             ?

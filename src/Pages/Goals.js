@@ -1,7 +1,7 @@
 // components
 import Layout from "../Layout"
 import SelectWithState from "../Components/SelectWithState"
-import CardAchievement from "../Components/CardAchievement"
+import CardAchievement from "../Components/CardAchievement/CardAchievement"
 
 // data
 import goals from "../Temp Data/goalsData"

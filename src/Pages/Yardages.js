@@ -1,6 +1,6 @@
 // components
 import Layout from "../Layout"
-import Table from "../Components/Table"
+import Table from "../Components/Table/Table"
 
 // data
 import yardages from "../Temp Data/yardagesData"

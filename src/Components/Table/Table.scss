@@ -1,0 +1,88 @@
+@import '../../styling/config.scss';
+
+.table-container {
+    overflow: scroll;
+    max-width: 100%;
+    box-shadow: $bs-xxl;
+    border-radius: $br-lg;
+}
+
+table {
+    border-spacing: 0;
+    width: 100%;
+
+    @media only screen and (max-width: 767px) {
+        td {
+            padding: $s-md1 $s-sm4;
+        }
+    }
+}
+
+.table__head {
+    background: $color-offwhite2;
+    border-radius: $br-lg $br-lg 0 0;
+}
+
+.table__head-cell {
+    color: $color-offwhite4;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
+    border-bottom: 2px solid $color-offwhite3;
+    letter-spacing: -.25px;
+}
+
+.table__body-row {
+    &:not(:last-of-type) .table__body-cell {
+        border-bottom: 1px solid $color-offwhite3;
+    }
+
+    &:nth-of-type(even) {
+        background: $color-offwhite1;
+    }
+
+    &:nth-of-type(odd) {
+        background: $color-white;
+    }
+}
+
+.table__head-cell, .table__body-cell {
+    padding: $s-md1 $s-md2;
+}
+
+.table__body-cell {
+    button {
+        padding: 0;
+        line-height: 1;
+        background: rgba(0,0,0,0);
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    svg {
+        fill: $color-primary;
+        height: 22px;
+        width: auto;
+        margin-bottom: -6px;
+    }
+}
+
+.table-button-container {
+    background: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255, .5));
+    border-radius: 0 0 $br-lg $br-lg;
+    height: 60px;
+    transform: translateY(-100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: $s-md2;
+
+    button {
+        transform: translateY(175%);
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

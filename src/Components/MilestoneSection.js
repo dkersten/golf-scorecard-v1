@@ -1,5 +1,5 @@
 // components
-import CardAchievement from "./CardAchievement"
+import CardAchievement from "./CardAchievement/CardAchievement"
 
 // styling
 import '../styling/components/MilestoneSection.scss'

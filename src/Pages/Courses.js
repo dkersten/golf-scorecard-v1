@@ -1,6 +1,6 @@
 // components
 import Layout from "../Layout"
-import Table from "../Components/Table"
+import Table from "../Components/Table/Table"
 import CardOverview from "../Components/CardOverview"
 
 // data

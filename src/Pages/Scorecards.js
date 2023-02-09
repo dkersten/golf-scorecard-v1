@@ -1,7 +1,7 @@
 // components
 import Layout from "../Layout"
 import CardOverview from "../Components/CardOverview"
-import Table from "../Components/Table"
+import Table from "../Components/Table/Table"
 
 // data
 import scores from "../Temp Data/scoresData"
