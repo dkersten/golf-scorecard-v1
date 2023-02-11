@@ -1,6 +1,6 @@
 // components
 import { ReactComponent as ArrowRightIcon } from '../../Assets/Icons/arrow-right-icon.svg'
-import BtnPrimary from '../BtnPrimary'
+import BtnPrimary from '../BtnPrimary/BtnPrimary'
 
 // libraries/helpers
 import renderHeaderData from '../../Helpers/RenderTableHeaderData'

@@ -1,0 +1,5 @@
+@import '../../styling/config.scss';
+
+.btn-secondary {
+    @include btn-secondary;
+}

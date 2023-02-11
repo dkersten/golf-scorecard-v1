@@ -1,6 +1,6 @@
 // components
 import Layout from "../Layout"
-import BtnSecondary from "../Components/BtnSecondary"
+import BtnSecondary from "../Components/BtnSecondary/BtnSecondary"
 import { ReactComponent as PlusIconLight } from "../../src/Assets/Icons/plus-icon-light.svg"
 import Modal from "../Components/Modal"
 import Button from "react-bootstrap/Button"

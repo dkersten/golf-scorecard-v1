@@ -1,3 +1,5 @@
+import './btn-primary.scss';
+
 const BtnPrimary = (props) => {
     const renderBtn = () => {
         if (props.clickAction) {
@@ -6,10 +8,10 @@ const BtnPrimary = (props) => {
                     className='btn-primary'
                     onClick={props.clickAction}
                 >
-                    <span className="btn-text">
+                    <span className="btn-primary__text">
                         {props.text}
                     </span>
-                    <span className="btn-icon">
+                    <span className="btn-primary__icon">
                         {props.icon}
                     </span>
                 </button>
@@ -19,10 +21,10 @@ const BtnPrimary = (props) => {
                 <button
                     className='btn-primary'
                 >
-                    <span className="btn-text">
+                    <span className="btn-primary__text">
                         {props.text}
                     </span>
-                    <span className="btn-icon">
+                    <span className="btn-primary__icon">
                         {props.icon}
                     </span>
                 </button>

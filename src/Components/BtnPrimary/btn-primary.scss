@@ -1,0 +1,13 @@
+@import '../../styling/config.scss';
+
+.btn-primary {
+    @include btnPrimary;
+
+    &[type="submit"] {
+        color: $color-offwhite1;
+    }
+
+    &.no-style {
+        @include btnNoStyle;
+    }
+}

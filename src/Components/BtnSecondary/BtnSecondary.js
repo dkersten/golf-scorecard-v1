@@ -1,3 +1,5 @@
+import './btn-secondary.scss';
+
 const BtnSecondary = (props) => {
     const renderBtn = () => {
         if (props.clickAction) {
@@ -19,10 +21,10 @@ const BtnSecondary = (props) => {
                 <button
                     className='btn-secondary'
                 >
-                    <span className="btn-text">
+                    <span className="btn-secondary__text">
                         {props.text}
                     </span>
-                    <span className="btn-icon">
+                    <span className="btn-secondary__icon">
                         {props.icon}
                     </span>
                 </button>
